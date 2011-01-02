@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/YouthTree/radiant-navigation-extension.git
+  revision: 5f2c91fbe807a3ed2715e5cb4903c61171a5881c
+  specs:
+    radiant-navigation-extension (2.0.3)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -50,6 +56,7 @@ DEPENDENCIES
   radiant-forms-extension
   radiant-images-extension
   radiant-layouts-extension
+  radiant-navigation-extension!
   radiant-settings-extension
   rake (>= 0.8.3)
   sqlite3-ruby

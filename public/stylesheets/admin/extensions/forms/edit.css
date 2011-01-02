@@ -1,0 +1,24 @@
+/* line 1, ../../../sass/admin/extensions/forms/edit.sass */
+.reference_links {
+  padding: 1em 0;
+  margin-top: -1em;
+}
+
+/* line 6, ../../../sass/admin/extensions/forms/edit.sass */
+.tabs img.close {
+  display: none;
+}
+
+/* line 10, ../../../sass/admin/extensions/forms/edit.sass */
+table.fieldset th.label {
+  white-space: nowrap;
+}
+/* line 13, ../../../sass/admin/extensions/forms/edit.sass */
+table.fieldset td.field input, table.fieldset td.field select {
+  width: 99%;
+}
+
+/* line 16, ../../../sass/admin/extensions/forms/edit.sass */
+.buttons {
+  clear: left;
+}
