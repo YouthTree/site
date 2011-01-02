@@ -480,17 +480,17 @@ body {
   padding: 0;
 }
 /* line 138, ../sass/youthtree/youthtree.sass */
-#content #image-container {
+#content .image-container {
   text-align: center;
   padding: 24px 0;
 }
 /* line 141, ../sass/youthtree/youthtree.sass */
-#content #image-container img {
+#content .image-container img {
   background: white;
   border: 0.25em solid #d2d8dd;
 }
 /* line 144, ../sass/youthtree/youthtree.sass */
-#content #image-container p {
+#content .image-container p {
   color: #555555;
   font-size: 0.8em;
   margin: 0;
