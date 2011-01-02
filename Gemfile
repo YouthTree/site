@@ -13,4 +13,3 @@ gem 'radiant-settings-extension', :require => nil
 gem 'radiant-forms-extension',    :require => nil
 gem 'radiant-images-extension',   :require => nil
 gem 'radiant-layouts-extension',  :require => nil
-gem 'radiant-navigation-extension', :git => 'git://github.com/YouthTree/radiant-navigation-extension.git', :require => nil
