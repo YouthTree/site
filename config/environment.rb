@@ -29,10 +29,7 @@ Radiant::Initializer.run do |config|
   # If you change this key, all old sessions will become invalid!
   # Make sure the secret is at least 30 characters and all random,
   # no regular words or you'll be exposed to dictionary attacks.
-  config.action_controller.session = {
-    :key => '_youthtree_session',
-    :secret      => '64ab3622a25fb99f1a1085f6c83508694540dc4a'
-  }
+  config.action_controller.session = YAML.load_file(Rails.root.join('config', 'session.yml')).symbolize_keys
 
   # Comment out this line if you want to turn off all caching, or
   # add options to modify the behavior. In the majority of deployment
@@ -55,18 +52,10 @@ Radiant::Initializer.run do |config|
   #    radiant: since this will enable manual expiration and acceleration headers.
   config.middleware.use ::Radiant::Cache
 
-  # Use the database for sessions instead of the cookie-based default,
-  # which shouldn't be used to store highly confidential information
-  # (create the session table with 'rake db:sessions:create')
   config.action_controller.session_store = :cookie_store
+  config.active_record.observers         = :user_action_observer
+  config.time_zone                       = 'UTC'
 
-  # Activate observers that should always be running
-  config.active_record.observers = :user_action_observer
-
-  # Make Active Record use UTC-base instead of local time
-  config.time_zone = 'UTC'
-
-  # Set the default field error proc
   config.action_view.field_error_proc = Proc.new do |html, instance|
     if html !~ /label/
       %{<span class="error-with-field">#{html} <span class="error">#{[instance.error_message].flatten.first}</span></span>}
@@ -76,6 +65,10 @@ Radiant::Initializer.run do |config|
   end
 
   config.gem 'will_paginate', :version => '~> 2.3.11', :source => 'http://gemcutter.org'
+  config.gem 'radiant-settings-extension', :lib => nil
+  config.gem 'radiant-forms-extension',    :lib => nil
+  config.gem 'radiant-images-extension',   :lib => nil
+  config.gem 'radiant-layouts-extension',  :lib => nil
 
   config.after_initialize do
     # Add new inflection rules using the following format:

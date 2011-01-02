@@ -157,5 +157,19 @@ module Radiant
   end
 end
 
+class Rails::Boot
+  def run
+    load_initializer
+
+    Radiant::Initializer.class_eval do
+      def load_gems
+        @bundler_loaded ||= Bundler.require :default, Rails.env
+      end
+    end
+
+    Radiant::Initializer.run(:set_load_path)
+  end
+end
+
 # All that for this:
 Radiant.boot!

@@ -1,0 +1,3 @@
+---
+key: 'yt-session'
+secret: 'somethinglongandover30characterswillmakethisworkasexpected'

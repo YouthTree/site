@@ -1,4 +1,5 @@
 config/database.yml
+config/session.yml
 db/*.sqlite3
 log/*.log
 pkg
