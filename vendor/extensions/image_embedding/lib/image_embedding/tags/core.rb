@@ -76,9 +76,6 @@ module ImageEmbedding
         tag
       end
       
-      tags 'images:list' do |tag|
-      end
-      
     end
   end
 end
