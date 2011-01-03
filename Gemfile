@@ -13,16 +13,11 @@ gem 'radiant-forms-extension',    :require => nil
 gem 'radiant-images-extension',   :require => nil
 gem 'radiant-layouts-extension',  :require => nil
 
+gem 'pg'
+gem 'unicorn'
+
 group :development do
   gem 'ruby-debug', :require => nil
   gem 'capistrano', :require => nil
   gem 'youthtree-capistrano', :require => nil
-end
-
-group :production, :staging do
-  gem 'pg'
-end
-
-group :development, :test do
-  gem 'sqlite3-ruby', :require => nil
 end
