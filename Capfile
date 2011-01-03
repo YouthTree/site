@@ -1,4 +1,4 @@
-[:unicorn, :settings, :jammit, :compass, :barista].each do |feature|
+[:settings, :jammit, :compass, :barista].each do |feature|
   set feature, false
 end
 
@@ -8,8 +8,7 @@ set :rvm_ruby_string, 'ree@youthtree_site'
 
 set :git_enable_submodules, true
 
-require 'youth_tree/capistrano'
-require 'config/radiant-capistrano'
+require 'youthtree-capistrano'
 
 namespace :session do
   
