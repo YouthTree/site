@@ -1,0 +1,51 @@
+.index#pages
+  
+  .page
+    
+    &.drop_hover
+      .attributes
+        border-bottom-color: #e0e3ec
+      
+      li
+        border-color: transparent
+  
+    &.drop_insert
+      
+      .attributes
+        background-color: #f6f8ff
+        border-color: transparent
+      
+      li
+        border-color: transparent
+        
+        .attributes
+          background-color: #ffffff
+            
+      
+    &.drag_move
+      .children
+        opacity: 0.25
+        filter: alpha(opacity = 25)
+    
+    .attributes
+    
+      .attribute
+      
+        &.handle
+          position: absolute
+          cursor: move
+          left: 9px
+          width: 24px
+          visibility: hidden
+          
+          img
+            cursor: move
+            
+      &:hover
+        .attribute
+          &.handle
+            visibility: visible
+
+.inset
+  .handle
+    display: none

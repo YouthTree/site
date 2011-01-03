@@ -1,0 +1,47 @@
+/* line 6, ../../../sass/admin/extensions/drag_order/drag_order.sass */
+.index#pages .page.drop_hover .attributes {
+  border-bottom-color: #e0e3ec;
+}
+/* line 9, ../../../sass/admin/extensions/drag_order/drag_order.sass */
+.index#pages .page.drop_hover li {
+  border-color: transparent;
+}
+/* line 14, ../../../sass/admin/extensions/drag_order/drag_order.sass */
+.index#pages .page.drop_insert .attributes {
+  background-color: #f6f8ff;
+  border-color: transparent;
+}
+/* line 18, ../../../sass/admin/extensions/drag_order/drag_order.sass */
+.index#pages .page.drop_insert li {
+  border-color: transparent;
+}
+/* line 21, ../../../sass/admin/extensions/drag_order/drag_order.sass */
+.index#pages .page.drop_insert li .attributes {
+  background-color: white;
+}
+/* line 26, ../../../sass/admin/extensions/drag_order/drag_order.sass */
+.index#pages .page.drag_move .children {
+  opacity: 0.25;
+  filter: alpha(opacity=25);
+}
+/* line 34, ../../../sass/admin/extensions/drag_order/drag_order.sass */
+.index#pages .page .attributes .attribute.handle {
+  position: absolute;
+  cursor: move;
+  left: 9px;
+  width: 24px;
+  visibility: hidden;
+}
+/* line 41, ../../../sass/admin/extensions/drag_order/drag_order.sass */
+.index#pages .page .attributes .attribute.handle img {
+  cursor: move;
+}
+/* line 46, ../../../sass/admin/extensions/drag_order/drag_order.sass */
+.index#pages .page .attributes:hover .attribute.handle {
+  visibility: visible;
+}
+
+/* line 50, ../../../sass/admin/extensions/drag_order/drag_order.sass */
+.inset .handle {
+  display: none;
+}

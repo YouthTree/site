@@ -7,3 +7,6 @@
 [submodule "design"]
 	path = design
 	url = git://github.com/YouthTree/site-design.git
+[submodule "vendor/extensions/drag_order"]
+	path = vendor/extensions/drag_order
+	url = git://github.com/dirkkelly/radiant-drag_order-extension.git

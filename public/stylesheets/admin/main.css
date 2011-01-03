@@ -972,15 +972,24 @@ body.edit_user #avatar p.caption, body.edit_personal_preferences #avatar p.capti
   line-height: 1.3;
 }
 
-/* line 10, ../sass/admin/partials/_index.sass */
-table.index {
+/* line 27, ../sass/admin/partials/_index.sass */
+#main {
+  overflow: hidden;
+}
+
+/* line 31, ../sass/admin/partials/_index.sass */
+ol.index {
+  border-top: 8px solid #9e9e9e;
+}
+
+/* line 34, ../sass/admin/partials/_index.sass */
+.index {
   font-size: 90%;
   margin-bottom: 2em;
   width: 100%;
-  border-bottom: 1px solid white;
 }
-/* line 15, ../sass/admin/partials/_index.sass */
-table.index th {
+/* line 38, ../sass/admin/partials/_index.sass */
+.index th {
   text-align: left;
   background-color: #9e9e9e;
   color: white;
@@ -988,41 +997,119 @@ table.index th {
   font-weight: normal;
   padding: 2px 9px;
 }
-/* line 22, ../sass/admin/partials/_index.sass */
-table.index th.actions {
+/* line 45, ../sass/admin/partials/_index.sass */
+.index th.actions {
   padding-left: 15px;
   min-width: 18em;
 }
-/* line 25, ../sass/admin/partials/_index.sass */
-table.index th.name {
+/* line 48, ../sass/admin/partials/_index.sass */
+.index th.name {
   width: 100%;
 }
-/* line 27, ../sass/admin/partials/_index.sass */
-table.index th.status {
+/* line 50, ../sass/admin/partials/_index.sass */
+.index th.status {
   min-width: 8em;
 }
-/* line 29, ../sass/admin/partials/_index.sass */
-table.index td {
+/* line 52, ../sass/admin/partials/_index.sass */
+.index li {
+  position: relative;
   text-align: left;
-  padding: 4px 9px;
-  border-top: 1px solid #f0f0f0;
 }
-/* line 33, ../sass/admin/partials/_index.sass */
-table.index td a.action, table.index td span.action.disabled {
-  padding: 6px;
-  margin: 0 25px 0 1px;
+/* line 56, ../sass/admin/partials/_index.sass */
+.index li .attributes .hover, .index li .attributes:hover, .index tbody tr .hover, .index tbody tr:hover {
+  border-top: 1px solid #d5f0ff;
+  border-bottom: 1px solid #c5dff5;
+  background: #c5dff5 url('/images/admin/row_highlight.png') repeat-x center top;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #e5f5ff), color-stop(100%, #c5dff5));
+  background-image: -moz-linear-gradient(top, #e5f5ff 0%, #c5dff5 100%);
+  background-image: linear-gradient(top, #e5f5ff 0%, #c5dff5 100%);
 }
-/* line 36, ../sass/admin/partials/_index.sass */
-table.index td a.action img, table.index td span.action.disabled img {
-  vertical-align: -18%;
+/* line 61, ../sass/admin/partials/_index.sass */
+.index li .attributes, .index td {
+  width: auto;
+  height: 31px;
+  line-height: 31px;
+  padding: 4px 0 4px 10px;
+  overflow: hidden;
+  text-decoration: none;
+  padding-left: 5px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #f4f4f4;
 }
-/* line 38, ../sass/admin/partials/_index.sass */
-table.index td a.action {
+/* line 71, ../sass/admin/partials/_index.sass */
+.index li .attributes .attribute, .index td .attribute {
+  display: block;
+  float: left;
+  padding-right: 5px;
+}
+/* line 75, ../sass/admin/partials/_index.sass */
+.index li .attributes .attribute.empty, .index td .attribute.empty {
+  color: silver;
+  font-size: 85%;
+  font-style: italic;
+  padding: 3em;
+  text-align: center;
+}
+/* line 81, ../sass/admin/partials/_index.sass */
+.index li .attributes .attribute.name, .index td .attribute.name {
+  font-size: 115%;
+  font-weight: bold;
+}
+/* line 19, ../sass/admin/partials/_index.sass */
+.index li .attributes .attribute.name img, .index td .attribute.name img {
+  vertical-align: center;
+}
+/* line 21, ../sass/admin/partials/_index.sass */
+.index li .attributes .attribute.name a, .index td .attribute.name a {
   color: black;
   text-decoration: none;
 }
-/* line 41, ../sass/admin/partials/_index.sass */
-table.index td a.action:hover {
+/* line 24, ../sass/admin/partials/_index.sass */
+.index li .attributes .attribute.name a:hover, .index td .attribute.name a:hover {
+  color: #0066cc;
+  text-decoration: underline;
+}
+/* line 83, ../sass/admin/partials/_index.sass */
+.index li .attributes .actions {
+  float: right;
+}
+/* line 85, ../sass/admin/partials/_index.sass */
+.index td.name {
+  width: 80%;
+  font-size: 115%;
+  font-weight: bold;
+}
+/* line 19, ../sass/admin/partials/_index.sass */
+.index td.name img {
+  vertical-align: center;
+}
+/* line 21, ../sass/admin/partials/_index.sass */
+.index td.name a {
+  color: black;
+  text-decoration: none;
+}
+/* line 24, ../sass/admin/partials/_index.sass */
+.index td.name a:hover {
+  color: #0066cc;
+  text-decoration: underline;
+}
+/* line 89, ../sass/admin/partials/_index.sass */
+.index li .attributes .actions a.action, .index li .attributes .actions span.action.disabled, .index td.actions a.action, .index td.actions span.action.disabled {
+  padding: 6px;
+  margin: 0 25px 0 1px;
+  font-size: 10px;
+}
+/* line 93, ../sass/admin/partials/_index.sass */
+.index li .attributes .actions a.action img, .index li .attributes .actions span.action.disabled img, .index td.actions a.action img, .index td.actions span.action.disabled img {
+  vertical-align: -10%;
+}
+/* line 95, ../sass/admin/partials/_index.sass */
+.index li .attributes .actions a.action, .index td.actions a.action {
+  color: black;
+  text-decoration: none;
+}
+/* line 98, ../sass/admin/partials/_index.sass */
+.index li .attributes .actions a.action:hover, .index td.actions a.action:hover {
   background: #eeeeee url('/images/admin/buttons_background.png') repeat-x;
   border: 1px solid #a5c9df;
   margin: 0 24px 0 0;
@@ -1033,8 +1120,8 @@ table.index td a.action:hover {
   -khtml-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 46, ../sass/admin/partials/_index.sass */
-table.index td a.action.selected {
+/* line 103, ../sass/admin/partials/_index.sass */
+.index li .attributes .actions a.action.selected, .index td.actions a.action.selected {
   background: #c5e0f5;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #e5f5ff), color-stop(100%, #c5e0ff));
   background-image: -moz-linear-gradient(top, #e5f5ff 0%, #c5e0ff 100%);
@@ -1066,119 +1153,108 @@ table.index td a.action.selected {
   -khtml-border-bottom-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-/* line 53, ../sass/admin/partials/_index.sass */
-table.index td span.action.disabled {
+/* line 110, ../sass/admin/partials/_index.sass */
+.index li .attributes .actions span.action.disabled, .index td.actions span.action.disabled {
   color: #cccccc;
 }
-/* line 55, ../sass/admin/partials/_index.sass */
-table.index td.empty {
-  color: silver;
-  font-size: 85%;
-  font-style: italic;
-  padding: 3em;
-  text-align: center;
-}
-/* line 61, ../sass/admin/partials/_index.sass */
-table.index td.name {
-  font-size: 115%;
-  font-weight: bold;
-}
-/* line 64, ../sass/admin/partials/_index.sass */
-table.index td.name img {
-  vertical-align: center;
-}
-/* line 66, ../sass/admin/partials/_index.sass */
-table.index td.name a {
-  color: black;
-  text-decoration: none;
-}
-/* line 69, ../sass/admin/partials/_index.sass */
-table.index td.name a:hover {
-  color: #0066cc;
-  text-decoration: underline;
-}
-/* line 72, ../sass/admin/partials/_index.sass */
-table.index td.actions {
-  font-size: 85%;
-  white-space: nowrap;
-}
-/* line 76, ../sass/admin/partials/_index.sass */
-table.index tr:first-child {
-  border-top: 1px solid white;
-}
-/* line 79, ../sass/admin/partials/_index.sass */
-table.index tr.hover td, table.index tr:hover td {
-  border-top: 1px solid #d5f0ff;
-  border-bottom: 1px solid #c5dff5;
-  background: #c5dff5 url('/images/admin/row_highlight.png') repeat-x center top;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #e5f5ff), color-stop(100%, #c5dff5));
-  background-image: -moz-linear-gradient(top, #e5f5ff 0%, #c5dff5 100%);
-  background-image: linear-gradient(top, #e5f5ff 0%, #c5dff5 100%);
-}
 
-/* line 87, ../sass/admin/partials/_index.sass */
-table.index#pages tr.page.level_0 td.name {
+/* line 115, ../sass/admin/partials/_index.sass */
+.index#pages .page.level_0 .attributes .attribute.name {
   font-size: 120%;
   font-weight: bold;
 }
-/* line 90, ../sass/admin/partials/_index.sass */
-table.index#pages tr.page.level_1 td.name {
+/* line 118, ../sass/admin/partials/_index.sass */
+.index#pages .page.level_1 .attributes .attribute.name {
   font-size: 115%;
   font-weight: bold;
 }
-/* line 93, ../sass/admin/partials/_index.sass */
-table.index#pages tr.page.level_2 td.name {
+/* line 121, ../sass/admin/partials/_index.sass */
+.index#pages .page.level_2 .attributes .attribute.name {
   font-size: 115%;
 }
-/* line 95, ../sass/admin/partials/_index.sass */
-table.index#pages tr.page.level_3 td.name {
+/* line 123, ../sass/admin/partials/_index.sass */
+.index#pages .page.level_3 .attributes .attribute.name {
   font-size: 105%;
 }
-/* line 97, ../sass/admin/partials/_index.sass */
-table.index#pages td.name {
+/* line 125, ../sass/admin/partials/_index.sass */
+.index#pages .page.virtual .attributes .attribute.name a .title {
+  color: #9eb3bf;
+}
+/* line 128, ../sass/admin/partials/_index.sass */
+.index#pages .page.children_visible .children {
+  display: block;
+}
+/* line 131, ../sass/admin/partials/_index.sass */
+.index#pages .page.children_hidden .children {
+  display: none;
+}
+/* line 134, ../sass/admin/partials/_index.sass */
+.index#pages .page .attributes .attribute.name {
   font-size: 105%;
 }
-/* line 99, ../sass/admin/partials/_index.sass */
-table.index#pages td.name a {
+/* line 136, ../sass/admin/partials/_index.sass */
+.index#pages .page .attributes .attribute.name a {
   text-decoration: none;
 }
-/* line 101, ../sass/admin/partials/_index.sass */
-table.index#pages td.name a .title {
+/* line 138, ../sass/admin/partials/_index.sass */
+.index#pages .page .attributes .attribute.name a .title {
   color: black;
   text-decoration: none;
 }
-/* line 104, ../sass/admin/partials/_index.sass */
-table.index#pages td.name a:hover .title {
+/* line 141, ../sass/admin/partials/_index.sass */
+.index#pages .page .attributes .attribute.name a:hover .title {
   color: #0066cc;
   text-decoration: underline;
 }
-/* line 107, ../sass/admin/partials/_index.sass */
-table.index#pages td.name .info {
+/* line 144, ../sass/admin/partials/_index.sass */
+.index#pages .page .attributes .attribute.name .info {
   color: #9eb3bf;
   font-style: italic;
   font-weight: normal;
   font-size: 90%;
 }
-/* line 112, ../sass/admin/partials/_index.sass */
-table.index#pages tr.page.virtual td.name a .title {
-  color: #9eb3bf;
-}
-/* line 115, ../sass/admin/partials/_index.sass */
-table.index#pages td.name .w1 {
+/* line 149, ../sass/admin/partials/_index.sass */
+.index#pages .page .attributes .attribute.name {
   position: relative;
 }
-/* line 117, ../sass/admin/partials/_index.sass */
-table.index#pages td.name .w1 img.expander {
-  left: -25px;
+/* line 151, ../sass/admin/partials/_index.sass */
+.index#pages .page .attributes .attribute.name img.expander {
   position: absolute;
-  padding: 6px 3px;
+  left: -25px;
+  top: 8px;
+  padding: 0 3px;
 }
-/* line 121, ../sass/admin/partials/_index.sass */
-table.index#pages td.status {
+/* line 156, ../sass/admin/partials/_index.sass */
+.index#pages .page .attributes .attribute.name img.expander.hidden {
+  visibility: hidden;
+}
+/* line 158, ../sass/admin/partials/_index.sass */
+.index#pages .page .attributes .attribute.status {
   font-size: 80%;
 }
 
-/* line 125, ../sass/admin/partials/_index.sass */
+/* line 161, ../sass/admin/partials/_index.sass */
+.status {
+  position: absolute;
+  right: 235px;
+  height: 14px;
+  line-height: 14px;
+  font-size: 10px;
+  color: black;
+  background: transparent;
+  display: block;
+  padding: 0 6px;
+  top: 14px;
+  width: 5em;
+  text-align: center;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -o-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -khtml-border-radius: 100px;
+  border-radius: 100px;
+}
+/* line 163, ../sass/admin/partials/_index.sass */
 .status a {
   color: #333333;
   text-decoration: none;
@@ -1189,12 +1265,18 @@ table.index#pages td.status {
   color: #0066cc;
 }
 
-/* line 127, ../sass/admin/partials/_index.sass */
+/* line 165, ../sass/admin/partials/_index.sass */
 .draft_status {
+  position: absolute;
+  right: 235px;
+  height: 14px;
+  line-height: 14px;
+  font-size: 10px;
   color: white;
   background: #cc494c;
   display: block;
   padding: 0 6px;
+  top: 14px;
   width: 5em;
   text-align: center;
   -moz-border-radius: 100px;
@@ -1205,12 +1287,18 @@ table.index#pages td.status {
   border-radius: 100px;
 }
 
-/* line 129, ../sass/admin/partials/_index.sass */
+/* line 167, ../sass/admin/partials/_index.sass */
 .hidden_status {
+  position: absolute;
+  right: 235px;
+  height: 14px;
+  line-height: 14px;
+  font-size: 10px;
   color: white;
   background: #9eb3bf;
   display: block;
   padding: 0 6px;
+  top: 14px;
   width: 5em;
   text-align: center;
   -moz-border-radius: 100px;
@@ -1221,22 +1309,31 @@ table.index#pages td.status {
   border-radius: 100px;
 }
 
-/* line 133, ../sass/admin/partials/_index.sass */
-table.index#users td.name {
+/* line 171, ../sass/admin/partials/_index.sass */
+.index#users .name {
   padding-top: 8px;
   padding-bottom: 8px;
 }
-/* line 136, ../sass/admin/partials/_index.sass */
-table.index#users td.name img.avatar {
+/* line 174, ../sass/admin/partials/_index.sass */
+.index#users .name img.avatar {
   margin-right: 4px;
   vertical-align: center;
 }
-/* line 139, ../sass/admin/partials/_index.sass */
-table.index#users td.name .login {
+/* line 177, ../sass/admin/partials/_index.sass */
+.index#users .name .login {
   color: #9eb3bf;
   font-size: 90%;
   font-style: italic;
   font-weight: normal;
+}
+
+/* line 184, ../sass/admin/partials/_index.sass */
+.inset li {
+  list-style: none;
+}
+/* line 186, ../sass/admin/partials/_index.sass */
+.inset .actions {
+  display: none;
 }
 
 /* line 1, ../sass/admin/partials/_content.sass */

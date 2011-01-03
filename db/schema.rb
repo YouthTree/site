@@ -122,6 +122,7 @@ ActiveRecord::Schema.define(:version => 20100810151922) do
     t.integer  "updated_by_id"
     t.boolean  "virtual",                      :default => false, :null => false
     t.integer  "lock_version",                 :default => 0
+    t.integer  "position",                     :default => 0
   end
 
   add_index "pages", ["class_name"], :name => "altered_pages_class_name"
