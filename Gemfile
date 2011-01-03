@@ -15,6 +15,7 @@ gem 'radiant-layouts-extension',  :require => nil
 
 gem 'pg'
 gem 'unicorn'
+gem 'nokogiri'
 
 group :development do
   gem 'ruby-debug', :require => nil
