@@ -13,3 +13,7 @@ gem 'radiant-settings-extension', :require => nil
 gem 'radiant-forms-extension',    :require => nil
 gem 'radiant-images-extension',   :require => nil
 gem 'radiant-layouts-extension',  :require => nil
+
+group :development do
+  gem 'ruby-debug', :require => nil
+end

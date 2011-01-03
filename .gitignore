@@ -14,3 +14,4 @@ spec/datasets/tmp
 .idea
 rerun.txt
 *.swp
+public/images/uploaded

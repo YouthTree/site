@@ -51,6 +51,21 @@ ActiveRecord::Schema.define(:version => 20100810151922) do
     t.text     "secondary"
   end
 
+  create_table "image_collection_entries", :force => true do |t|
+    t.integer  "image_id"
+    t.integer  "image_collection_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "image_collection_entries", ["image_collection_id"], :name => "index_image_collection_entries_on_image_collection_id"
+
+  create_table "image_collections", :force => true do |t|
+    t.string   "title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "images", :force => true do |t|
     t.string   "title"
     t.string   "caption"
