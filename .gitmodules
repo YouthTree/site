@@ -4,3 +4,6 @@
 [submodule "vendor/extensions/navigation"]
 	path = vendor/extensions/navigation
 	url = git://github.com/YouthTree/radiant-navigation-extension.git
+[submodule "design"]
+	path = design
+	url = git://github.com/YouthTree/site-design.git
