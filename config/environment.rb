@@ -77,3 +77,6 @@ Radiant::Initializer.run do |config|
     end
   end
 end
+
+# Add in the yt design repo as a sass source.
+Sass::Plugin.add_template_location 'design/sass', 'public/stylesheets/youthtree'
