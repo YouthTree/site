@@ -5,7 +5,6 @@ gem 'rack',          '~> 1.1.0', :require => nil
 gem 'will_paginate', '~> 2.3.11', :require => nil
 gem 'compass',       '~> 0.10.5', :require => nil
 gem 'RedCloth',      '>= 4.0.0', :require => nil
-gem 'sqlite3-ruby', :require => nil
 
 # Actual Radiant Extensions to use.
 
@@ -16,4 +15,14 @@ gem 'radiant-layouts-extension',  :require => nil
 
 group :development do
   gem 'ruby-debug', :require => nil
+  gem 'capistrano', :require => nil
+  gem 'youthtree-capistrano', :require => nil
+end
+
+group :production, :staging do
+  gem 'pg'
+end
+
+group :development, :test do
+  gem 'sqlite3-ruby', :require => nil
 end
