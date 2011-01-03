@@ -70,7 +70,7 @@ GEM
       activerecord
       activesupport
       thor (~> 0.14)
-    youthtree-capistrano (0.3.0)
+    youthtree-capistrano (0.3.1)
       bundler (~> 1.0)
       capistrano
       rvm (~> 1.0)
