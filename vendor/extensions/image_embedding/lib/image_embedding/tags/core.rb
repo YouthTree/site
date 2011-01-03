@@ -38,7 +38,7 @@ module ImageEmbedding
         Renders an image with a caption, taking a given title.
         
         *Usage:*
-        <pre><code><r:embed_image title='something' /></code></pre>
+        <pre><code><r:image:container title='something' /></code></pre>
         
         * @title@ - The required title of the image.
         * @style@ - The style of the image, defaults to original.
@@ -74,6 +74,35 @@ module ImageEmbedding
         
         tag << '</div>'
         tag
+      end
+      
+      desc %{
+        Returns a ranged list of images.
+        
+        *Usage:*
+        <pre><code><r:image:list prefix="something-" from="a" to="c" /></code></pre>
+        
+        * @prefix@ - Name prefix
+        * @from@ - Start value
+        * @to@ - End value
+      }
+      tag 'image:list' do |tag|
+        return if %w(from to prefix).any? { |i| tag.attr[i].blank? }
+        range = (tag.attr['from']..tag.attr['to'])
+        prefix = tag.attr['prefix']
+        images = Image.all(:conditions => ['title like ?', "#{prefix}%"]).inject({}) do |acc, current|
+          acc.merge current.title => current
+        end
+        inner = ""
+        range.each do |current|
+          image = images["#{prefix}#{current}"]
+          if image.present?
+            tag.locals.image = image
+            inner << content_tag(:li, tag.expand)
+            tag.locals.image = nil
+          end
+        end
+        content_tag :ul, inner
       end
       
     end
