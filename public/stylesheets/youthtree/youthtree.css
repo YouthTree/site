@@ -124,7 +124,7 @@ input, select {
   src: local("☺"), url("/fonts/ingomar-webfont.woff") format("woff"), url("/fonts/ingomar-webfont.ttf") format("truetype"), url("/fonts/ingomar-webfont.svg#webfont") format("svg");
 }
 
-/* line 6, ../../../design/sass/youthtree.sass */
+/* line 6, ../../../design/sass/_youthtree.sass */
 body {
   background: #cccccc url("/images/youthtree/background.jpg") center center repeat;
   font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
@@ -536,7 +536,7 @@ ul#yt-sites li {
 /* line 1, ../../../design/sass/_header.sass */
 #page-header {
   *zoom: 1;
-  margin: 0 0 0.5em;
+  margin: 0 0 0;
 }
 /* line 264, ../../../design/sass/_simplass.sass */
 #page-header:after {
@@ -555,8 +555,8 @@ ul#yt-sites li {
 #page-header h1 a {
   display: block;
   margin: 0;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 225px;
   text-indent: -10000px;
   background: url("/images/youthtree/logo.png") center center no-repeat;
 }
@@ -661,7 +661,7 @@ ul#yt-sites li {
   border-bottom: 1px dotted #777777;
   padding: 5px;
   margin-bottom: 14px;
-  color: #ce8d22;
+  color: black;
 }
 /* line 20, ../../../design/sass/_content.sass */
 #content h1 a, #content h2 a, #content h3 a, #content h4 a, #content h5 a, #content h6 a {
@@ -674,27 +674,27 @@ ul#yt-sites li {
 }
 /* line 24, ../../../design/sass/_content.sass */
 #content h1 {
-  font-size: 2em;
+  font-size: 2.25em;
 }
 /* line 27, ../../../design/sass/_content.sass */
 #content h2 {
-  font-size: 1.5em;
+  font-size: 1.75em;
 }
 /* line 30, ../../../design/sass/_content.sass */
 #content h3 {
-  font-size: 1.25em;
+  font-size: 1.5em;
 }
 /* line 33, ../../../design/sass/_content.sass */
 #content h4 {
-  font-size: 1.2em;
+  font-size: 1.35em;
 }
 /* line 36, ../../../design/sass/_content.sass */
 #content h5 {
-  font-size: 1.1em;
+  font-size: 1.25em;
 }
 /* line 39, ../../../design/sass/_content.sass */
 #content h6 {
-  font-size: 1em;
+  font-size: 1.2em;
 }
 /* line 42, ../../../design/sass/_content.sass */
 #content p {
@@ -1021,35 +1021,23 @@ h2#mission-statement {
   margin: 0 0 1em;
 }
 
-/* line 5, ../../../design/sass/_forms.sass */
-form.formtastic fieldset.inputs {
-  border: none;
-  margin: 0;
-  padding: 48px 0 14px;
-  display: block;
-  position: relative;
-  top: 0px;
-  left: 0;
-  /* width: 100%; width: 95% */
+/* line 6, ../../../design/sass/_forms.sass */
+form.formtastic fieldset.inputs legend {
+  padding-bottom: 0.5em;
 }
-/* line 14, ../../../design/sass/_forms.sass */
+/* line 8, ../../../design/sass/_forms.sass */
 form.formtastic fieldset.inputs legend span {
-  height: 1.4em;
-  width: 100%;
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0px;
+  height: 1.5em;
   line-height: 1.4em;
   font-weight: bold;
   font-style: normal;
   font-family: "IngomarJNLRegular";
   text-transform: uppercase;
-  font-size: 1.3em;
-  border-bottom: 1px dotted #777777;
-  color: #ce8d22;
+  font-size: 1.5em;
+  color: black;
+  padding: 0 0 0.5em;
 }
-/* line 28, ../../../design/sass/_forms.sass */
+/* line 17, ../../../design/sass/_forms.sass */
 form.formtastic fieldset.inputs ol li label {
   font-size: 0.9em;
   font-weight: bold;
@@ -1057,9 +1045,8 @@ form.formtastic fieldset.inputs ol li label {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 33, ../../../design/sass/_forms.sass */
+/* line 22, ../../../design/sass/_forms.sass */
 form.formtastic fieldset.inputs ol li label abbr.required {
   color: #992427;
-  float: right;
-  padding-right: 0.5em;
+  padding-left: 0.5em;
 }

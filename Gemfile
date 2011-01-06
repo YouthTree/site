@@ -10,12 +10,15 @@ gem 'RedCloth',      '>= 4.0.0', :require => nil
 
 gem 'radiant-settings-extension', :require => nil
 gem 'radiant-forms-extension',    :require => nil
-gem 'radiant-images-extension',   :require => nil
 gem 'radiant-layouts-extension',  :require => nil
 
 gem 'pg'
 gem 'unicorn'
 gem 'nokogiri'
+
+gem 'paperclip'
+gem 'aws-s3', :require => nil
+gem 'acts_as_list', :require => nil
 
 group :development do
   gem 'ruby-debug', :require => nil

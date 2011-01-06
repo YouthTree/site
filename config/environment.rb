@@ -67,7 +67,6 @@ Radiant::Initializer.run do |config|
   config.gem 'will_paginate', :version => '~> 2.3.11', :source => 'http://gemcutter.org'
   config.gem 'radiant-settings-extension', :lib => nil
   config.gem 'radiant-forms-extension',    :lib => nil
-  config.gem 'radiant-images-extension',   :lib => nil
   config.gem 'radiant-layouts-extension',  :lib => nil
 
   config.after_initialize do

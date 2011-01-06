@@ -99,13 +99,22 @@ ActiveRecord::Schema.define(:version => 20100810151922) do
   add_index "page_fields", ["page_id", "name", "content"], :name => "index_page_fields_on_page_id_and_name_and_content"
 
   create_table "page_parts", :force => true do |t|
-    t.string  "name",      :limit => 100
-    t.string  "filter_id", :limit => 25
-    t.text    "content"
-    t.integer "page_id"
+    t.string   "name",             :limit => 100
+    t.string   "filter_id",        :limit => 25
+    t.text     "content"
+    t.integer  "page_id"
+    t.string   "page_part_type"
+    t.string   "string_content"
+    t.boolean  "boolean_content"
+    t.integer  "integer_content"
+    t.datetime "datetime_content"
   end
 
+  add_index "page_parts", ["boolean_content"], :name => "index_page_parts_on_boolean_content"
+  add_index "page_parts", ["datetime_content"], :name => "index_page_parts_on_datetime_content"
+  add_index "page_parts", ["integer_content"], :name => "index_page_parts_on_integer_content"
   add_index "page_parts", ["page_id", "name"], :name => "parts_by_page"
+  add_index "page_parts", ["string_content"], :name => "index_page_parts_on_string_content"
 
   create_table "pages", :force => true do |t|
     t.string   "title"

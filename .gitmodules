@@ -10,3 +10,12 @@
 [submodule "vendor/extensions/drag_order"]
 	path = vendor/extensions/drag_order
 	url = git://github.com/dirkkelly/radiant-drag_order-extension.git
+[submodule "vendor/extensions/page_parts"]
+	path = vendor/extensions/page_parts
+	url = git://github.com/digitalpulp/radiant-page_parts-extension.git
+[submodule "vendor/extensions/page_factory"]
+	path = vendor/extensions/page_factory
+	url = git://github.com/joshfrench/radiant-page_factory-extension.git
+[submodule "vendor/extensions/images"]
+	path = vendor/extensions/images
+	url = git://github.com/squaretalent/radiant-images-extension.git
