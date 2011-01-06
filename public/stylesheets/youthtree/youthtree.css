@@ -124,7 +124,7 @@ input, select {
   src: local("☺"), url("/fonts/ingomar-webfont.woff") format("woff"), url("/fonts/ingomar-webfont.ttf") format("truetype"), url("/fonts/ingomar-webfont.svg#webfont") format("svg");
 }
 
-/* line 6, ../../../design/sass/_youthtree.sass */
+/* line 8, ../../../design/sass/_youthtree.sass */
 body {
   background: #cccccc url("/images/youthtree/background.jpg") center center repeat;
   font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
@@ -568,19 +568,19 @@ ul#yt-sites li {
   list-style: none;
 }
 
-/* line 21, ../../../design/sass/_header.sass */
+/* line 19, ../../../design/sass/_header.sass */
 #site-navigation {
   overflow: hidden;
   *zoom: 1;
   padding-top: 4.5em;
   z-index: 50;
 }
-/* line 26, ../../../design/sass/_header.sass */
+/* line 24, ../../../design/sass/_header.sass */
 #site-navigation ul {
   font-size: 2.5em;
   z-index: 50;
 }
-/* line 30, ../../../design/sass/_header.sass */
+/* line 28, ../../../design/sass/_header.sass */
 #site-navigation a {
   display: block;
   font-weight: bold;
@@ -592,37 +592,37 @@ ul#yt-sites li {
   padding: 0.25em 0.5em;
   text-shadow: white 1px 1px 1px;
 }
-/* line 38, ../../../design/sass/_header.sass */
+/* line 36, ../../../design/sass/_header.sass */
 #site-navigation li {
   float: right;
   cursor: pointer;
 }
-/* line 41, ../../../design/sass/_header.sass */
+/* line 39, ../../../design/sass/_header.sass */
 #site-navigation li ul {
   font-size: 0.75em;
   position: absolute;
   left: -999em;
   background: #ce8d22;
 }
-/* line 47, ../../../design/sass/_header.sass */
+/* line 45, ../../../design/sass/_header.sass */
 #site-navigation li ul li {
   float: none;
 }
-/* line 50, ../../../design/sass/_header.sass */
+/* line 48, ../../../design/sass/_header.sass */
 #site-navigation li:hover, #site-navigation li.sfhover {
   cursor: pointer;
 }
-/* line 52, ../../../design/sass/_header.sass */
+/* line 50, ../../../design/sass/_header.sass */
 #site-navigation li:hover a, #site-navigation li.sfhover a {
   background: #ce8d22;
   color: white;
   text-shadow: black 1px 1px 1px;
 }
-/* line 56, ../../../design/sass/_header.sass */
+/* line 54, ../../../design/sass/_header.sass */
 #site-navigation li:hover ul, #site-navigation li.sfhover ul {
   left: auto;
 }
-/* line 59, ../../../design/sass/_header.sass */
+/* line 57, ../../../design/sass/_header.sass */
 #site-navigation li:hover ul li:hover a, #site-navigation li:hover ul li.sfhover a, #site-navigation li.sfhover ul li:hover a, #site-navigation li.sfhover ul li.sfhover a {
   background: #614210;
 }
@@ -665,12 +665,12 @@ ul#yt-sites li {
 }
 /* line 20, ../../../design/sass/_content.sass */
 #content h1 a, #content h2 a, #content h3 a, #content h4 a, #content h5 a, #content h6 a {
-  color: #ce8d22;
+  color: #4c3414;
   text-decoration: none;
 }
 /* line 284, ../../../design/sass/_simplass.sass */
 #content h1 a:hover, #content h2 a:hover, #content h3 a:hover, #content h4 a:hover, #content h5 a:hover, #content h6 a:hover {
-  color: #a26f1b;
+  color: #ce8d22;
 }
 /* line 24, ../../../design/sass/_content.sass */
 #content h1 {
@@ -844,6 +844,14 @@ ul#yt-sites li {
   line-height: 1.5em;
 }
 /* line 152, ../../../design/sass/_content.sass */
+#content aside ul li.current > a:before {
+  content: "» ";
+  color: #ce8d22;
+  font-weight: bold;
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;
+  font-size: 0.8em;
+}
+/* line 159, ../../../design/sass/_content.sass */
 #content aside ul li a {
   color: #333333;
   text-decoration: none;
@@ -852,12 +860,13 @@ ul#yt-sites li {
 #content aside ul li a:hover {
   color: black;
 }
-/* line 156, ../../../design/sass/_content.sass */
+/* line 163, ../../../design/sass/_content.sass */
 #content aside ul li li {
   margin: 0;
   font-size: 1em;
+  padding-left: 0.5em;
 }
-/* line 159, ../../../design/sass/_content.sass */
+/* line 167, ../../../design/sass/_content.sass */
 #content aside ul li li a {
   color: #555555;
 }
@@ -865,7 +874,7 @@ ul#yt-sites li {
 #content aside ul li li a:hover {
   color: #222222;
 }
-/* line 162, ../../../design/sass/_content.sass */
+/* line 170, ../../../design/sass/_content.sass */
 #content article.with-sidebar {
   display: block;
   float: left;
