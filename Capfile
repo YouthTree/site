@@ -14,6 +14,8 @@ require 'youthtree-capistrano'
 set :bundle_dir,   nil
 set :bundle_flags, '--quiet'
 
+set :deploy_via, :remote_cache
+
 namespace :session do
   
   set :session_config_file_name, 'session.yml'
