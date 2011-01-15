@@ -170,174 +170,186 @@ form.formtastic input, form.formtastic textarea, form.formtastic select {
 }
 /* line 23, ../../../design/sass/_formtastic.sass */
 form.formtastic legend {
-  white-space: normal;
   color: black;
 }
-/* line 26, ../../../design/sass/_formtastic.sass */
-form.formtastic ul.errors {
-  color: #cc0000;
-  margin: 0.5em 0 1.5em 25%;
-  list-style: square;
+/* line 25, ../../../design/sass/_formtastic.sass */
+form.formtastic legend.label label {
+  width: 100%;
 }
-/* line 30, ../../../design/sass/_formtastic.sass */
-form.formtastic ul.errors li {
-  padding: 0;
-  border: none;
-  display: list-item;
-}
-/* line 34, ../../../design/sass/_formtastic.sass */
+/* line 27, ../../../design/sass/_formtastic.sass */
 form.formtastic fieldset {
-  overflow: auto;
+  display: inline-block;
 }
-/* line 37, ../../../design/sass/_formtastic.sass */
+/* line 29, ../../../design/sass/_formtastic.sass */
 form.formtastic fieldset.buttons {
-  padding-left: 25%;
+  padding-left: 28%;
 }
-/* line 40, ../../../design/sass/_formtastic.sass */
+/* line 31, ../../../design/sass/_formtastic.sass */
 form.formtastic fieldset.buttons li {
   float: left;
   padding-right: 0.5em;
 }
-/* line 43, ../../../design/sass/_formtastic.sass */
-form.formtastic fieldset > ol > li {
-  padding: 0.5em 0;
-  margin-top: -0.5em;
-  margin-bottom: 1em;
-  overflow: auto;
+/* line 34, ../../../design/sass/_formtastic.sass */
+form.formtastic fieldset:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 41, ../../../design/sass/_formtastic.sass */
+html form.formtastic fieldset {
+  display: block;
+}
+
+/* line 44, ../../../design/sass/_formtastic.sass */
+* html form.formtastic fieldset {
+  height: 1%;
+}
+
+/* line 47, ../../../design/sass/_formtastic.sass */
+form.formtastic fieldset ol li {
+  margin-bottom: 1.5em;
 }
 /* line 49, ../../../design/sass/_formtastic.sass */
-form.formtastic fieldset > ol > li label {
+form.formtastic fieldset ol li:after {
+  content: ".";
   display: block;
-  width: 23%;
-  padding-right: 2%;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 56, ../../../design/sass/_formtastic.sass */
+html[xmlns] form.formtastic fieldset ol li {
+  display: block;
+}
+
+/* line 59, ../../../design/sass/_formtastic.sass */
+* html form.formtastic fieldset ol li {
+  height: 1%;
+}
+
+/* line 63, ../../../design/sass/_formtastic.sass */
+form.formtastic fieldset ol li label {
+  display: block;
+  width: 25%;
+  margin-right: 3%;
   float: left;
   padding-top: 0.2em;
 }
-/* line 55, ../../../design/sass/_formtastic.sass */
-form.formtastic fieldset > ol > li > li label {
+/* line 69, ../../../design/sass/_formtastic.sass */
+form.formtastic fieldset ol li li label {
   line-height: 100%;
   padding-top: 0;
+  width: auto;
+  margin-right: 0;
 }
-/* line 58, ../../../design/sass/_formtastic.sass */
-form.formtastic fieldset > ol > li > li label input {
+/* line 74, ../../../design/sass/_formtastic.sass */
+form.formtastic fieldset ol li li label input {
   line-height: 100%;
   vertical-align: middle;
   margin-top: -0.1em;
 }
-/* line 62, ../../../design/sass/_formtastic.sass */
-form.formtastic fieldset > ol > li fieldset {
+/* line 78, ../../../design/sass/_formtastic.sass */
+form.formtastic fieldset ol li fieldset {
   position: relative;
 }
-/* line 64, ../../../design/sass/_formtastic.sass */
-form.formtastic fieldset > ol > li fieldset legend {
+/* line 80, ../../../design/sass/_formtastic.sass */
+form.formtastic fieldset ol li fieldset legend {
   position: absolute;
-  width: 95%;
+  width: 28%;
   padding-top: 0.1em;
-  left: 0px;
 }
-/* line 69, ../../../design/sass/_formtastic.sass */
-form.formtastic fieldset > ol > li fieldset legend span, form.formtastic fieldset > ol > li fieldset legend.label label {
+/* line 84, ../../../design/sass/_formtastic.sass */
+form.formtastic fieldset ol li fieldset legend span, form.formtastic fieldset ol li fieldset legend.label label {
   position: absolute;
 }
-/* line 71, ../../../design/sass/_formtastic.sass */
-form.formtastic fieldset > ol > li fieldset ol {
+/* line 86, ../../../design/sass/_formtastic.sass */
+form.formtastic fieldset ol li fieldset ol {
   float: left;
-  width: 74%;
+  width: 69%;
   margin: 0;
-  padding: 0 0 0 25%;
+  padding: 0 0 0 28%;
 }
-/* line 76, ../../../design/sass/_formtastic.sass */
-form.formtastic fieldset > ol > li fieldset ol li {
+/* line 91, ../../../design/sass/_formtastic.sass */
+form.formtastic fieldset ol li fieldset ol li {
   padding: 0;
   border: 0;
 }
-/* line 80, ../../../design/sass/_formtastic.sass */
-form.formtastic fieldset > ol > li p.inline-hints {
+/* line 95, ../../../design/sass/_formtastic.sass */
+form.formtastic fieldset ol li p.inline-hints {
   color: #666666;
-  margin: 0.5em 0 0 25%;
+  margin: 0.5em 0 0 28%;
 }
-/* line 83, ../../../design/sass/_formtastic.sass */
-form.formtastic fieldset > ol > li p.inline-errors {
+/* line 98, ../../../design/sass/_formtastic.sass */
+form.formtastic fieldset ol li p.inline-errors {
   color: #cc0000;
-  margin: 0.5em 0 0 25%;
+  margin: 0.5em 0 0 28%;
 }
-/* line 86, ../../../design/sass/_formtastic.sass */
-form.formtastic fieldset > ol > li ul.errors {
+/* line 101, ../../../design/sass/_formtastic.sass */
+form.formtastic fieldset ol li ul.errors {
   color: #cc0000;
-  margin: 0.5em 0 0 25%;
+  margin: 0.5em 0 0 28%;
   list-style: square;
 }
-/* line 90, ../../../design/sass/_formtastic.sass */
-form.formtastic fieldset > ol > li ul.errors li {
+/* line 105, ../../../design/sass/_formtastic.sass */
+form.formtastic fieldset ol li ul.errors li {
   padding: 0;
   border: none;
   display: list-item;
 }
-/* line 94, ../../../design/sass/_formtastic.sass */
-form.formtastic fieldset > ol > li.string input, form.formtastic fieldset > ol > li.password input, form.formtastic fieldset > ol > li.numeric input, form.formtastic fieldset > ol > li.email input, form.formtastic fieldset > ol > li.url input, form.formtastic fieldset > ol > li.phone input, form.formtastic fieldset > ol > li.search input {
-  width: 72%;
+/* line 109, ../../../design/sass/_formtastic.sass */
+form.formtastic fieldset ol li.string input, form.formtastic fieldset ol li.password input, form.formtastic fieldset ol li.numeric input, form.formtastic fieldset ol li.text textarea, form.formtastic fieldset ol li.datetime_picker input, form.formtastic fieldset ol li.date_picker input, form.formtastic fieldset ol li.email input, form.formtastic fieldset ol li.password input, form.formtastic fieldset ol li.phone input {
+  width: 67%;
 }
-/* line 96, ../../../design/sass/_formtastic.sass */
-form.formtastic fieldset > ol > li.string input[size], form.formtastic fieldset > ol > li.password input[size], form.formtastic fieldset > ol > li.numeric input[size], form.formtastic fieldset > ol > li.email input[size], form.formtastic fieldset > ol > li.url input[size], form.formtastic fieldset > ol > li.phone input[size], form.formtastic fieldset > ol > li.search input[size], form.formtastic fieldset > ol > li.datetime_picker input[size], form.formtastic fieldset > ol > li.date_picker input[size] {
-  width: auto;
-  max-width: 72%;
+/* line 111, ../../../design/sass/_formtastic.sass */
+form.formtastic fieldset ol li.datetime_range_picker input, form.formtastic fieldset ol li.date_range_picker input {
+  width: 29.5%;
 }
-/* line 99, ../../../design/sass/_formtastic.sass */
-form.formtastic fieldset > ol > li.text textarea {
-  width: 72%;
-}
-/* line 101, ../../../design/sass/_formtastic.sass */
-form.formtastic fieldset > ol > li.text textarea[cols] {
-  width: auto;
-  max-width: 72%;
-}
-/* line 104, ../../../design/sass/_formtastic.sass */
+/* line 113, ../../../design/sass/_formtastic.sass */
 form.formtastic fieldset ol li.hidden {
   display: none;
 }
-/* line 107, ../../../design/sass/_formtastic.sass */
-form.formtastic fieldset > ol > li.boolean label {
-  padding-left: 25%;
+/* line 115, ../../../design/sass/_formtastic.sass */
+form.formtastic fieldset ol li.boolean label {
+  padding-left: 28%;
   width: auto;
 }
-/* line 110, ../../../design/sass/_formtastic.sass */
-form.formtastic fieldset > ol > li.boolean label input {
+/* line 118, ../../../design/sass/_formtastic.sass */
+form.formtastic fieldset ol li.boolean label input {
   margin: 0 0.5em 0 0.2em;
 }
-/* line 112, ../../../design/sass/_formtastic.sass */
-form.formtastic fieldset > ol > li.radio fieldset, form.formtastic fieldset > ol > li.check_boxes fieldset {
-  overflow: visible;
+/* line 120, ../../../design/sass/_formtastic.sass */
+form.formtastic fieldset ol li.radio fieldset ol, form.formtastic fieldset ol li.check_boxes fieldset ol {
+  margin-bottom: -0.6em;
 }
-/* line 114, ../../../design/sass/_formtastic.sass */
-form.formtastic fieldset > ol > li.radio fieldset ol, form.formtastic fieldset > ol > li.check_boxes fieldset ol {
-  margin-bottom: -0.5em;
-}
-/* line 116, ../../../design/sass/_formtastic.sass */
-form.formtastic fieldset > ol > li.radio fieldset ol li, form.formtastic fieldset > ol > li.check_boxes fieldset ol li {
+/* line 122, ../../../design/sass/_formtastic.sass */
+form.formtastic fieldset ol li.radio fieldset ol li, form.formtastic fieldset ol li.check_boxes fieldset ol li {
   margin: 0.1em 0 0.5em 0;
-  overflow: visible;
 }
-/* line 119, ../../../design/sass/_formtastic.sass */
-form.formtastic fieldset > ol > li.radio fieldset ol li label, form.formtastic fieldset > ol > li.check_boxes fieldset ol li label {
+/* line 124, ../../../design/sass/_formtastic.sass */
+form.formtastic fieldset ol li.radio fieldset ol li label, form.formtastic fieldset ol li.check_boxes fieldset ol li label {
   float: none;
   width: 100%;
 }
-/* line 122, ../../../design/sass/_formtastic.sass */
-form.formtastic fieldset > ol > li.radio fieldset ol li label input, form.formtastic fieldset > ol > li.check_boxes fieldset ol li label input {
+/* line 127, ../../../design/sass/_formtastic.sass */
+form.formtastic fieldset ol li.radio fieldset ol li label input, form.formtastic fieldset ol li.check_boxes fieldset ol li label input {
   margin-right: 0.2em;
 }
-/* line 124, ../../../design/sass/_formtastic.sass */
-form.formtastic fieldset > ol > li.date fieldset ol li, form.formtastic fieldset > ol > li.time fieldset ol li, form.formtastic fieldset > ol > li.datetime fieldset ol li {
+/* line 129, ../../../design/sass/_formtastic.sass */
+form.formtastic fieldset ol li.date fieldset ol li, form.formtastic fieldset ol li.time fieldset ol li, form.formtastic fieldset ol li.datetime fieldset ol li, form.formtastic fieldset ol li.dob fieldset ol li {
   float: left;
   width: auto;
   margin: 0 0.3em 0 0;
 }
-/* line 128, ../../../design/sass/_formtastic.sass */
-form.formtastic fieldset > ol > li.date fieldset ol li label, form.formtastic fieldset > ol > li.time fieldset ol li label, form.formtastic fieldset > ol > li.datetime fieldset ol li label {
+/* line 133, ../../../design/sass/_formtastic.sass */
+form.formtastic fieldset ol li.date fieldset ol li label, form.formtastic fieldset ol li.time fieldset ol li label, form.formtastic fieldset ol li.datetime fieldset ol li label, form.formtastic fieldset ol li.dob fieldset ol li label {
   display: none;
 }
-/* line 130, ../../../design/sass/_formtastic.sass */
-form.formtastic fieldset > ol > li.date fieldset ol li label input, form.formtastic fieldset > ol > li.time fieldset ol li label input, form.formtastic fieldset > ol > li.datetime fieldset ol li label input {
+/* line 135, ../../../design/sass/_formtastic.sass */
+form.formtastic fieldset ol li.date fieldset ol li label input, form.formtastic fieldset ol li.time fieldset ol li label input, form.formtastic fieldset ol li.datetime fieldset ol li label input, form.formtastic fieldset ol li.dob fieldset ol li label input {
   display: inline;
   margin: 0;
   padding: 0;
@@ -370,14 +382,7 @@ form.formtastic fieldset > ol > li.date fieldset ol li label input, form.formtas
 /* line 15, ../../../design/sass/_network.sass */
 #yt-subscribe {
   float: left;
-}
-/* line 17, ../../../design/sass/_network.sass */
-#yt-subscribe a {
-  padding: 0 20px;
-}
-/* line 19, ../../../design/sass/_network.sass */
-#yt-subscribe.active {
-  background: #1e1e1e;
+  background: #c4771b;
   -moz-border-radius-bottomleft: 15px;
   -webkit-border-bottom-left-radius: 15px;
   -o-border-bottom-left-radius: 15px;
@@ -391,36 +396,49 @@ form.formtastic fieldset > ol > li.date fieldset ol li label input, form.formtas
   -khtml-border-bottom-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-/* line 22, ../../../design/sass/_network.sass */
+/* line 19, ../../../design/sass/_network.sass */
+#yt-subscribe a {
+  padding: 0 20px;
+  color: black;
+}
+/* line 284, ../../../design/sass/_simplass.sass */
+#yt-subscribe a:hover {
+  color: white;
+}
+/* line 23, ../../../design/sass/_network.sass */
+#yt-subscribe.active {
+  background: #1e1e1e;
+}
+/* line 25, ../../../design/sass/_network.sass */
 #yt-subscribe.active a {
   color: #c4771b;
 }
 
-/* line 25, ../../../design/sass/_network.sass */
+/* line 28, ../../../design/sass/_network.sass */
 #yt-subscribe, ul#yt-sites {
   font-size: 12px;
   line-height: 18px;
   padding: 10px;
 }
 
-/* line 30, ../../../design/sass/_network.sass */
+/* line 33, ../../../design/sass/_network.sass */
 ul#yt-sites {
   float: right;
   margin: 0;
   list-style: none;
 }
-/* line 35, ../../../design/sass/_network.sass */
+/* line 38, ../../../design/sass/_network.sass */
 ul#yt-sites li {
   display: inline;
   margin: 0 0 0 20px;
 }
 
-/* line 39, ../../../design/sass/_network.sass */
+/* line 42, ../../../design/sass/_network.sass */
 #yt-subscribe-panel {
   display: none;
   background: #1e1e1e;
 }
-/* line 42, ../../../design/sass/_network.sass */
+/* line 45, ../../../design/sass/_network.sass */
 #yt-subscribe-panel form {
   width: 960px;
   margin: 0 auto;
@@ -429,12 +447,12 @@ ul#yt-sites li {
   *zoom: 1;
   font-size: 12px;
 }
-/* line 49, ../../../design/sass/_network.sass */
+/* line 52, ../../../design/sass/_network.sass */
 #yt-subscribe-panel fieldset {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 52, ../../../design/sass/_network.sass */
+/* line 55, ../../../design/sass/_network.sass */
 #yt-subscribe-panel fieldset label {
   color: white;
   padding: 5px 10px 5px 0;
@@ -442,18 +460,18 @@ ul#yt-sites li {
   float: left;
   display: block;
 }
-/* line 59, ../../../design/sass/_network.sass */
+/* line 62, ../../../design/sass/_network.sass */
 #yt-subscribe-panel fieldset#yt-subscriber-details {
   float: left;
   margin-right: 10px;
   width: 220px;
 }
-/* line 63, ../../../design/sass/_network.sass */
+/* line 66, ../../../design/sass/_network.sass */
 #yt-subscribe-panel fieldset#yt-subscriber-details label {
   width: 50px;
   padding-top: 8px;
 }
-/* line 66, ../../../design/sass/_network.sass */
+/* line 69, ../../../design/sass/_network.sass */
 #yt-subscribe-panel fieldset#yt-subscriber-details input {
   float: left;
   background: #666666;
@@ -464,17 +482,17 @@ ul#yt-sites li {
   width: 150px;
   margin-bottom: 10px;
 }
-/* line 77, ../../../design/sass/_network.sass */
+/* line 80, ../../../design/sass/_network.sass */
 #yt-subscribe-panel fieldset#yt-subscriber-subscriptions {
   float: left;
   width: 520px;
   margin: 0 10px;
 }
-/* line 81, ../../../design/sass/_network.sass */
+/* line 84, ../../../design/sass/_network.sass */
 #yt-subscribe-panel fieldset#yt-subscriber-subscriptions label {
   width: 130px;
 }
-/* line 84, ../../../design/sass/_network.sass */
+/* line 87, ../../../design/sass/_network.sass */
 #yt-subscribe-panel fieldset#yt-subscribe-button {
   float: right;
   width: 170px;
@@ -482,7 +500,7 @@ ul#yt-sites li {
   padding-top: 15px;
   text-align: left;
 }
-/* line 91, ../../../design/sass/_network.sass */
+/* line 94, ../../../design/sass/_network.sass */
 #yt-subscribe-panel fieldset#yt-subscribe-button button {
   padding: 10px 30px;
   background: #c86e05 url("/images/youthtree/bg-gradient.png") bottom center repeat-x;
@@ -502,12 +520,12 @@ ul#yt-sites li {
   -o-box-shadow: black 1px 1px 5px false;
   box-shadow: black 1px 1px 5px false;
 }
-/* line 102, ../../../design/sass/_network.sass */
+/* line 105, ../../../design/sass/_network.sass */
 #yt-subscribe-panel fieldset#yt-subscribe-button button:hover {
   cursor: pointer;
   background-color: #af6004;
 }
-/* line 107, ../../../design/sass/_network.sass */
+/* line 110, ../../../design/sass/_network.sass */
 #yt-subscribe-panel ul#yt-newsletter-choices {
   float: left;
   display: block;
@@ -516,19 +534,19 @@ ul#yt-sites li {
   padding: 0;
   list-style: none;
 }
-/* line 114, ../../../design/sass/_network.sass */
+/* line 117, ../../../design/sass/_network.sass */
 #yt-subscribe-panel ul#yt-newsletter-choices li {
   display: block;
 }
-/* line 116, ../../../design/sass/_network.sass */
+/* line 119, ../../../design/sass/_network.sass */
 #yt-subscribe-panel ul#yt-newsletter-choices li label {
   width: auto;
 }
-/* line 118, ../../../design/sass/_network.sass */
+/* line 121, ../../../design/sass/_network.sass */
 #yt-subscribe-panel ul#yt-newsletter-choices li label span.yt-list-name {
   color: white;
 }
-/* line 120, ../../../design/sass/_network.sass */
+/* line 123, ../../../design/sass/_network.sass */
 #yt-subscribe-panel ul#yt-newsletter-choices li label span.yt-list-description {
   padding-left: 5px;
   color: #6a6a6a;
@@ -537,7 +555,8 @@ ul#yt-sites li {
 /* line 1, ../../../design/sass/_header.sass */
 #page-header {
   *zoom: 1;
-  margin: 0 0 0;
+  margin: 0 auto;
+  width: 1080px;
 }
 /* line 264, ../../../design/sass/_simplass.sass */
 #page-header:after {
@@ -548,40 +567,41 @@ ul#yt-sites li {
   overflow: hidden;
   visibility: hidden;
 }
-/* line 4, ../../../design/sass/_header.sass */
+/* line 5, ../../../design/sass/_header.sass */
 #page-header h1 {
   float: left;
 }
-/* line 6, ../../../design/sass/_header.sass */
+/* line 7, ../../../design/sass/_header.sass */
 #page-header h1 a {
   display: block;
   margin: 0;
   width: 250px;
-  height: 225px;
+  height: 190px;
   text-indent: -10000px;
   background: url("/images/youthtree/logo.png") center center no-repeat;
 }
 
-/* line 14, ../../../design/sass/_header.sass */
+/* line 15, ../../../design/sass/_header.sass */
 #site-navigation, #site-navigation ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-/* line 19, ../../../design/sass/_header.sass */
+/* line 20, ../../../design/sass/_header.sass */
 #site-navigation {
   overflow: hidden;
   *zoom: 1;
   padding-top: 4.5em;
   z-index: 50;
+  margin: 0 50px 0 0;
 }
-/* line 24, ../../../design/sass/_header.sass */
+/* line 26, ../../../design/sass/_header.sass */
 #site-navigation ul {
   font-size: 2.5em;
   z-index: 50;
 }
-/* line 28, ../../../design/sass/_header.sass */
+/* line 30, ../../../design/sass/_header.sass */
 #site-navigation a {
   display: block;
   font-weight: normal;
@@ -593,38 +613,42 @@ ul#yt-sites li {
   padding: 0.25em 0.5em;
   text-shadow: white 1px 1px 1px;
 }
-/* line 36, ../../../design/sass/_header.sass */
+/* line 38, ../../../design/sass/_header.sass */
 #site-navigation li {
   float: right;
   cursor: pointer;
   margin: 0;
 }
-/* line 40, ../../../design/sass/_header.sass */
+/* line 42, ../../../design/sass/_header.sass */
 #site-navigation li ul {
   font-size: 0.75em;
   position: absolute;
   left: -999em;
   background: #ce8d22;
 }
-/* line 46, ../../../design/sass/_header.sass */
+/* line 48, ../../../design/sass/_header.sass */
 #site-navigation li ul li {
   float: none;
 }
-/* line 49, ../../../design/sass/_header.sass */
+/* line 51, ../../../design/sass/_header.sass */
 #site-navigation li:hover, #site-navigation li.sfhover {
   cursor: pointer;
 }
-/* line 51, ../../../design/sass/_header.sass */
+/* line 53, ../../../design/sass/_header.sass */
 #site-navigation li:hover a, #site-navigation li.sfhover a {
   background: #ce8d22;
   color: white;
   text-shadow: black 1px 1px 1px;
 }
-/* line 55, ../../../design/sass/_header.sass */
+/* line 57, ../../../design/sass/_header.sass */
 #site-navigation li:hover ul, #site-navigation li.sfhover ul {
   left: auto;
 }
-/* line 58, ../../../design/sass/_header.sass */
+/* line 59, ../../../design/sass/_header.sass */
+#site-navigation li:hover ul li, #site-navigation li.sfhover ul li {
+  height: 1.5em;
+}
+/* line 62, ../../../design/sass/_header.sass */
 #site-navigation li:hover ul li:hover a, #site-navigation li:hover ul li.sfhover a, #site-navigation li.sfhover ul li:hover a, #site-navigation li.sfhover ul li.sfhover a {
   background: #614210;
 }
@@ -632,7 +656,7 @@ ul#yt-sites li {
 /* line 1, ../../../design/sass/_content.sass */
 #container {
   width: 960px;
-  margin: 1em auto 3em;
+  margin: 0 auto 3em;
 }
 
 /* line 5, ../../../design/sass/_content.sass */
@@ -903,16 +927,9 @@ ul#yt-sites li {
   color: white;
 }
 /* line 11, ../../../design/sass/_footer.sass */
-#page-footer p#copyright-information {
-  float: left;
-  font-size: 0.8em;
-  line-height: 1.5em;
-}
-/* line 16, ../../../design/sass/_footer.sass */
 #page-footer ul#supporter-information {
-  float: right;
   font-size: 1.2em;
-  margin: 0.5em 0 0;
+  margin: 0.5em auto 0.5em;
   padding: 0;
   list-style: none;
   font-weight: normal;
@@ -920,11 +937,12 @@ ul#yt-sites li {
   font-family: "IngomarJNLRegular";
   text-transform: uppercase;
   text-shadow: black 1px 1px 2px;
+  text-align: center;
 }
-/* line 24, ../../../design/sass/_footer.sass */
+/* line 19, ../../../design/sass/_footer.sass */
 #page-footer ul#supporter-information li {
   display: inline;
-  margin-left: 0.5em;
+  margin: 0 0.5em;
 }
 
 /* line 1, ../../../design/sass/_misc.sass */
