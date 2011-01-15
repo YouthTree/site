@@ -118,7 +118,7 @@ input, select {
  */
 @font-face {
   font-family: "IngomarJNLRegular";
-  font-weight: bold;
+  font-weight: normal;
   font-style: normal;
   src: url("/fonts/ingomar-webfont.eot");
   src: local("☺"), url("/fonts/ingomar-webfont.woff") format("woff"), url("/fonts/ingomar-webfont.ttf") format("truetype"), url("/fonts/ingomar-webfont.svg#webfont") format("svg");
@@ -208,134 +208,135 @@ form.formtastic fieldset > ol > li {
 /* line 49, ../../../design/sass/_formtastic.sass */
 form.formtastic fieldset > ol > li label {
   display: block;
-  width: 25%;
+  width: 23%;
+  padding-right: 2%;
   float: left;
   padding-top: 0.2em;
 }
-/* line 54, ../../../design/sass/_formtastic.sass */
+/* line 55, ../../../design/sass/_formtastic.sass */
 form.formtastic fieldset > ol > li > li label {
   line-height: 100%;
   padding-top: 0;
 }
-/* line 57, ../../../design/sass/_formtastic.sass */
+/* line 58, ../../../design/sass/_formtastic.sass */
 form.formtastic fieldset > ol > li > li label input {
   line-height: 100%;
   vertical-align: middle;
   margin-top: -0.1em;
 }
-/* line 61, ../../../design/sass/_formtastic.sass */
+/* line 62, ../../../design/sass/_formtastic.sass */
 form.formtastic fieldset > ol > li fieldset {
   position: relative;
 }
-/* line 63, ../../../design/sass/_formtastic.sass */
+/* line 64, ../../../design/sass/_formtastic.sass */
 form.formtastic fieldset > ol > li fieldset legend {
   position: absolute;
   width: 95%;
   padding-top: 0.1em;
   left: 0px;
 }
-/* line 68, ../../../design/sass/_formtastic.sass */
+/* line 69, ../../../design/sass/_formtastic.sass */
 form.formtastic fieldset > ol > li fieldset legend span, form.formtastic fieldset > ol > li fieldset legend.label label {
   position: absolute;
 }
-/* line 70, ../../../design/sass/_formtastic.sass */
+/* line 71, ../../../design/sass/_formtastic.sass */
 form.formtastic fieldset > ol > li fieldset ol {
   float: left;
   width: 74%;
   margin: 0;
   padding: 0 0 0 25%;
 }
-/* line 75, ../../../design/sass/_formtastic.sass */
+/* line 76, ../../../design/sass/_formtastic.sass */
 form.formtastic fieldset > ol > li fieldset ol li {
   padding: 0;
   border: 0;
 }
-/* line 79, ../../../design/sass/_formtastic.sass */
+/* line 80, ../../../design/sass/_formtastic.sass */
 form.formtastic fieldset > ol > li p.inline-hints {
   color: #666666;
   margin: 0.5em 0 0 25%;
 }
-/* line 82, ../../../design/sass/_formtastic.sass */
+/* line 83, ../../../design/sass/_formtastic.sass */
 form.formtastic fieldset > ol > li p.inline-errors {
   color: #cc0000;
   margin: 0.5em 0 0 25%;
 }
-/* line 85, ../../../design/sass/_formtastic.sass */
+/* line 86, ../../../design/sass/_formtastic.sass */
 form.formtastic fieldset > ol > li ul.errors {
   color: #cc0000;
   margin: 0.5em 0 0 25%;
   list-style: square;
 }
-/* line 89, ../../../design/sass/_formtastic.sass */
+/* line 90, ../../../design/sass/_formtastic.sass */
 form.formtastic fieldset > ol > li ul.errors li {
   padding: 0;
   border: none;
   display: list-item;
 }
-/* line 93, ../../../design/sass/_formtastic.sass */
+/* line 94, ../../../design/sass/_formtastic.sass */
 form.formtastic fieldset > ol > li.string input, form.formtastic fieldset > ol > li.password input, form.formtastic fieldset > ol > li.numeric input, form.formtastic fieldset > ol > li.email input, form.formtastic fieldset > ol > li.url input, form.formtastic fieldset > ol > li.phone input, form.formtastic fieldset > ol > li.search input {
   width: 72%;
 }
-/* line 95, ../../../design/sass/_formtastic.sass */
+/* line 96, ../../../design/sass/_formtastic.sass */
 form.formtastic fieldset > ol > li.string input[size], form.formtastic fieldset > ol > li.password input[size], form.formtastic fieldset > ol > li.numeric input[size], form.formtastic fieldset > ol > li.email input[size], form.formtastic fieldset > ol > li.url input[size], form.formtastic fieldset > ol > li.phone input[size], form.formtastic fieldset > ol > li.search input[size], form.formtastic fieldset > ol > li.datetime_picker input[size], form.formtastic fieldset > ol > li.date_picker input[size] {
   width: auto;
   max-width: 72%;
 }
-/* line 98, ../../../design/sass/_formtastic.sass */
+/* line 99, ../../../design/sass/_formtastic.sass */
 form.formtastic fieldset > ol > li.text textarea {
   width: 72%;
 }
-/* line 100, ../../../design/sass/_formtastic.sass */
+/* line 101, ../../../design/sass/_formtastic.sass */
 form.formtastic fieldset > ol > li.text textarea[cols] {
   width: auto;
   max-width: 72%;
 }
-/* line 103, ../../../design/sass/_formtastic.sass */
+/* line 104, ../../../design/sass/_formtastic.sass */
 form.formtastic fieldset ol li.hidden {
   display: none;
 }
-/* line 106, ../../../design/sass/_formtastic.sass */
+/* line 107, ../../../design/sass/_formtastic.sass */
 form.formtastic fieldset > ol > li.boolean label {
   padding-left: 25%;
   width: auto;
 }
-/* line 109, ../../../design/sass/_formtastic.sass */
+/* line 110, ../../../design/sass/_formtastic.sass */
 form.formtastic fieldset > ol > li.boolean label input {
   margin: 0 0.5em 0 0.2em;
 }
-/* line 111, ../../../design/sass/_formtastic.sass */
+/* line 112, ../../../design/sass/_formtastic.sass */
 form.formtastic fieldset > ol > li.radio fieldset, form.formtastic fieldset > ol > li.check_boxes fieldset {
   overflow: visible;
 }
-/* line 113, ../../../design/sass/_formtastic.sass */
+/* line 114, ../../../design/sass/_formtastic.sass */
 form.formtastic fieldset > ol > li.radio fieldset ol, form.formtastic fieldset > ol > li.check_boxes fieldset ol {
   margin-bottom: -0.5em;
 }
-/* line 115, ../../../design/sass/_formtastic.sass */
+/* line 116, ../../../design/sass/_formtastic.sass */
 form.formtastic fieldset > ol > li.radio fieldset ol li, form.formtastic fieldset > ol > li.check_boxes fieldset ol li {
   margin: 0.1em 0 0.5em 0;
   overflow: visible;
 }
-/* line 118, ../../../design/sass/_formtastic.sass */
+/* line 119, ../../../design/sass/_formtastic.sass */
 form.formtastic fieldset > ol > li.radio fieldset ol li label, form.formtastic fieldset > ol > li.check_boxes fieldset ol li label {
   float: none;
   width: 100%;
 }
-/* line 121, ../../../design/sass/_formtastic.sass */
+/* line 122, ../../../design/sass/_formtastic.sass */
 form.formtastic fieldset > ol > li.radio fieldset ol li label input, form.formtastic fieldset > ol > li.check_boxes fieldset ol li label input {
   margin-right: 0.2em;
 }
-/* line 123, ../../../design/sass/_formtastic.sass */
+/* line 124, ../../../design/sass/_formtastic.sass */
 form.formtastic fieldset > ol > li.date fieldset ol li, form.formtastic fieldset > ol > li.time fieldset ol li, form.formtastic fieldset > ol > li.datetime fieldset ol li {
   float: left;
   width: auto;
   margin: 0 0.3em 0 0;
 }
-/* line 127, ../../../design/sass/_formtastic.sass */
+/* line 128, ../../../design/sass/_formtastic.sass */
 form.formtastic fieldset > ol > li.date fieldset ol li label, form.formtastic fieldset > ol > li.time fieldset ol li label, form.formtastic fieldset > ol > li.datetime fieldset ol li label {
   display: none;
 }
-/* line 129, ../../../design/sass/_formtastic.sass */
+/* line 130, ../../../design/sass/_formtastic.sass */
 form.formtastic fieldset > ol > li.date fieldset ol li label input, form.formtastic fieldset > ol > li.time fieldset ol li label input, form.formtastic fieldset > ol > li.datetime fieldset ol li label input {
   display: inline;
   margin: 0;
@@ -583,7 +584,7 @@ ul#yt-sites li {
 /* line 28, ../../../design/sass/_header.sass */
 #site-navigation a {
   display: block;
-  font-weight: bold;
+  font-weight: normal;
   font-style: normal;
   font-family: "IngomarJNLRegular";
   text-transform: uppercase;
@@ -596,33 +597,34 @@ ul#yt-sites li {
 #site-navigation li {
   float: right;
   cursor: pointer;
+  margin: 0;
 }
-/* line 39, ../../../design/sass/_header.sass */
+/* line 40, ../../../design/sass/_header.sass */
 #site-navigation li ul {
   font-size: 0.75em;
   position: absolute;
   left: -999em;
   background: #ce8d22;
 }
-/* line 45, ../../../design/sass/_header.sass */
+/* line 46, ../../../design/sass/_header.sass */
 #site-navigation li ul li {
   float: none;
 }
-/* line 48, ../../../design/sass/_header.sass */
+/* line 49, ../../../design/sass/_header.sass */
 #site-navigation li:hover, #site-navigation li.sfhover {
   cursor: pointer;
 }
-/* line 50, ../../../design/sass/_header.sass */
+/* line 51, ../../../design/sass/_header.sass */
 #site-navigation li:hover a, #site-navigation li.sfhover a {
   background: #ce8d22;
   color: white;
   text-shadow: black 1px 1px 1px;
 }
-/* line 54, ../../../design/sass/_header.sass */
+/* line 55, ../../../design/sass/_header.sass */
 #site-navigation li:hover ul, #site-navigation li.sfhover ul {
   left: auto;
 }
-/* line 57, ../../../design/sass/_header.sass */
+/* line 58, ../../../design/sass/_header.sass */
 #site-navigation li:hover ul li:hover a, #site-navigation li:hover ul li.sfhover a, #site-navigation li.sfhover ul li:hover a, #site-navigation li.sfhover ul li.sfhover a {
   background: #614210;
 }
@@ -630,17 +632,18 @@ ul#yt-sites li {
 /* line 1, ../../../design/sass/_content.sass */
 #container {
   width: 960px;
-  margin: 1em auto;
+  margin: 1em auto 3em;
 }
 
 /* line 5, ../../../design/sass/_content.sass */
 #content {
+  width: 920px;
   padding: 20px;
   background: #e9eff4;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 10, ../../../design/sass/_content.sass */
+/* line 11, ../../../design/sass/_content.sass */
 #content a {
   color: #36527e;
 }
@@ -652,9 +655,9 @@ ul#yt-sites li {
 #content a:active {
   color: #777777;
 }
-/* line 13, ../../../design/sass/_content.sass */
+/* line 14, ../../../design/sass/_content.sass */
 #content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
-  font-weight: bold;
+  font-weight: normal;
   font-style: normal;
   font-family: "IngomarJNLRegular";
   text-transform: uppercase;
@@ -663,7 +666,7 @@ ul#yt-sites li {
   margin-bottom: 14px;
   color: black;
 }
-/* line 20, ../../../design/sass/_content.sass */
+/* line 21, ../../../design/sass/_content.sass */
 #content h1 a, #content h2 a, #content h3 a, #content h4 a, #content h5 a, #content h6 a {
   color: #4c3414;
   text-decoration: none;
@@ -672,31 +675,31 @@ ul#yt-sites li {
 #content h1 a:hover, #content h2 a:hover, #content h3 a:hover, #content h4 a:hover, #content h5 a:hover, #content h6 a:hover {
   color: #ce8d22;
 }
-/* line 24, ../../../design/sass/_content.sass */
+/* line 25, ../../../design/sass/_content.sass */
 #content h1 {
   font-size: 2.25em;
 }
-/* line 27, ../../../design/sass/_content.sass */
+/* line 28, ../../../design/sass/_content.sass */
 #content h2 {
   font-size: 1.75em;
 }
-/* line 30, ../../../design/sass/_content.sass */
+/* line 31, ../../../design/sass/_content.sass */
 #content h3 {
   font-size: 1.5em;
 }
-/* line 33, ../../../design/sass/_content.sass */
+/* line 34, ../../../design/sass/_content.sass */
 #content h4 {
   font-size: 1.35em;
 }
-/* line 36, ../../../design/sass/_content.sass */
+/* line 37, ../../../design/sass/_content.sass */
 #content h5 {
   font-size: 1.25em;
 }
-/* line 39, ../../../design/sass/_content.sass */
+/* line 40, ../../../design/sass/_content.sass */
 #content h6 {
   font-size: 1.2em;
 }
-/* line 42, ../../../design/sass/_content.sass */
+/* line 43, ../../../design/sass/_content.sass */
 #content p {
   line-height: 1.35em;
   font-size: 0.9em;
@@ -704,12 +707,12 @@ ul#yt-sites li {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 48, ../../../design/sass/_content.sass */
+/* line 49, ../../../design/sass/_content.sass */
 #content p img {
   float: left;
   margin: 0 10px 10px 0;
 }
-/* line 52, ../../../design/sass/_content.sass */
+/* line 53, ../../../design/sass/_content.sass */
 #content blockquote {
   font-size: 1.2em;
   color: black;
@@ -717,95 +720,96 @@ ul#yt-sites li {
   margin: 0 0 14px;
   line-height: 1.5em;
 }
-/* line 59, ../../../design/sass/_content.sass */
+/* line 60, ../../../design/sass/_content.sass */
 #content pre {
   color: #444444;
   margin: 0 0 14px;
   padding: 1em;
 }
-/* line 64, ../../../design/sass/_content.sass */
+/* line 65, ../../../design/sass/_content.sass */
 #content pre p {
   margin: 0;
   padding: 0;
 }
-/* line 68, ../../../design/sass/_content.sass */
+/* line 69, ../../../design/sass/_content.sass */
 #content .image-container {
   text-align: center;
   padding: 24px 0;
 }
-/* line 71, ../../../design/sass/_content.sass */
+/* line 72, ../../../design/sass/_content.sass */
 #content .image-container img {
   background: white;
   border: 0.25em solid #d2d8dd;
 }
-/* line 74, ../../../design/sass/_content.sass */
+/* line 75, ../../../design/sass/_content.sass */
 #content .image-container p {
   color: #555555;
   font-size: 0.8em;
   margin: 0;
   padding: 1em 0;
 }
-/* line 80, ../../../design/sass/_content.sass */
+/* line 81, ../../../design/sass/_content.sass */
 #content ul, #content ol, #content dl {
   font-size: 0.9em;
-  line-height: 1.5em;
+  line-height: 1.8em;
   margin: 0 0 14px;
 }
-/* line 85, ../../../design/sass/_content.sass */
+/* line 86, ../../../design/sass/_content.sass */
 #content ul, #content ol {
-  list-style-position: inside;
+  list-style-position: outside;
+  margin-left: 1.25em;
 }
-/* line 89, ../../../design/sass/_content.sass */
+/* line 91, ../../../design/sass/_content.sass */
 #content dl dt {
   font-weight: bold;
   margin-top: 8px;
   color: #111111;
 }
-/* line 93, ../../../design/sass/_content.sass */
+/* line 95, ../../../design/sass/_content.sass */
 #content dl dd {
   color: #444444;
 }
-/* line 96, ../../../design/sass/_content.sass */
+/* line 98, ../../../design/sass/_content.sass */
 #content img a {
   border: none;
 }
-/* line 99, ../../../design/sass/_content.sass */
+/* line 101, ../../../design/sass/_content.sass */
 #content .subsection-container {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 102, ../../../design/sass/_content.sass */
+/* line 104, ../../../design/sass/_content.sass */
 #content .subsection {
   float: left;
   width: 215px;
   margin: 0 10px;
 }
-/* line 108, ../../../design/sass/_content.sass */
-#content .subsection:first-child {
+/* line 110, ../../../design/sass/_content.sass */
+#content .subsection.first {
   margin-left: 0;
 }
-/* line 110, ../../../design/sass/_content.sass */
-#content .subsection:last-child {
+/* line 112, ../../../design/sass/_content.sass */
+#content .subsection.last {
   margin-right: 0;
 }
-/* line 113, ../../../design/sass/_content.sass */
+/* line 115, ../../../design/sass/_content.sass */
 #content .subsection h3 {
   font-size: 1.5em;
   margin-bottom: 10px;
 }
-/* line 117, ../../../design/sass/_content.sass */
+/* line 119, ../../../design/sass/_content.sass */
 #content .subsection p {
   line-height: 1.5em;
   font-size: 0.9em;
 }
-/* line 121, ../../../design/sass/_content.sass */
+/* line 123, ../../../design/sass/_content.sass */
 #content ul.section-links {
   list-style: none;
   margin: 0;
   line-height: 1.25em;
   font-size: 0.9em;
 }
-/* line 126, ../../../design/sass/_content.sass */
+/* line 128, ../../../design/sass/_content.sass */
 #content ul.section-links a {
   color: #555555;
   text-decoration: none;
@@ -814,7 +818,7 @@ ul#yt-sites li {
 #content ul.section-links a:hover {
   color: #111111;
 }
-/* line 130, ../../../design/sass/_content.sass */
+/* line 132, ../../../design/sass/_content.sass */
 #content aside {
   float: left;
   display: block;
@@ -823,27 +827,27 @@ ul#yt-sites li {
   margin-top: 0.5em;
   margin: 0.5em 20px 0 0;
 }
-/* line 138, ../../../design/sass/_content.sass */
+/* line 140, ../../../design/sass/_content.sass */
 #content aside h2 {
   margin-bottom: 7px;
 }
-/* line 141, ../../../design/sass/_content.sass */
+/* line 143, ../../../design/sass/_content.sass */
 #content aside ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 146, ../../../design/sass/_content.sass */
+/* line 148, ../../../design/sass/_content.sass */
 #content aside ul li {
   display: block;
   font-size: 1.5em;
-  font-weight: bold;
+  font-weight: normal;
   font-style: normal;
   font-family: "IngomarJNLRegular";
   text-transform: uppercase;
   line-height: 1.5em;
 }
-/* line 152, ../../../design/sass/_content.sass */
+/* line 154, ../../../design/sass/_content.sass */
 #content aside ul li.current > a:before {
   content: "» ";
   color: #ce8d22;
@@ -851,7 +855,7 @@ ul#yt-sites li {
   font-family: Verdana, Arial, Helvetica, Sans-Serif;
   font-size: 0.8em;
 }
-/* line 159, ../../../design/sass/_content.sass */
+/* line 161, ../../../design/sass/_content.sass */
 #content aside ul li a {
   color: #333333;
   text-decoration: none;
@@ -860,13 +864,13 @@ ul#yt-sites li {
 #content aside ul li a:hover {
   color: black;
 }
-/* line 163, ../../../design/sass/_content.sass */
+/* line 165, ../../../design/sass/_content.sass */
 #content aside ul li li {
   margin: 0;
   font-size: 1em;
   padding-left: 0.5em;
 }
-/* line 167, ../../../design/sass/_content.sass */
+/* line 169, ../../../design/sass/_content.sass */
 #content aside ul li li a {
   color: #555555;
 }
@@ -874,7 +878,7 @@ ul#yt-sites li {
 #content aside ul li li a:hover {
   color: #222222;
 }
-/* line 170, ../../../design/sass/_content.sass */
+/* line 172, ../../../design/sass/_content.sass */
 #content article.with-sidebar {
   display: block;
   float: left;
@@ -911,7 +915,7 @@ ul#yt-sites li {
   margin: 0.5em 0 0;
   padding: 0;
   list-style: none;
-  font-weight: bold;
+  font-weight: normal;
   font-style: normal;
   font-family: "IngomarJNLRegular";
   text-transform: uppercase;
@@ -943,18 +947,16 @@ ul#yt-sites li {
 /* line 15, ../../../design/sass/_misc.sass */
 #carousel ul li {
   position: absolute;
+  top: 0;
+  left: 0;
   margin: 0;
   padding: 0;
   width: 895px;
   height: 350px;
   display: none;
 }
-/* line 22, ../../../design/sass/_misc.sass */
-#carousel ul li:first-child {
-  display: block;
-}
 
-/* line 25, ../../../design/sass/_misc.sass */
+/* line 27, ../../../design/sass/_misc.sass */
 ul#social-media-icons {
   overflow: hidden;
   *zoom: 1;
@@ -963,7 +965,7 @@ ul#social-media-icons {
   list-style: none;
   width: 150px;
 }
-/* line 31, ../../../design/sass/_misc.sass */
+/* line 33, ../../../design/sass/_misc.sass */
 ul#social-media-icons li {
   display: inline;
   display: block;
@@ -972,7 +974,7 @@ ul#social-media-icons li {
   margin: 10px 20px 10px 0;
   float: left;
 }
-/* line 38, ../../../design/sass/_misc.sass */
+/* line 40, ../../../design/sass/_misc.sass */
 ul#social-media-icons li a {
   display: block;
   width: 24px;
@@ -980,52 +982,51 @@ ul#social-media-icons li a {
   text-indent: -1000px;
 }
 
-/* line 44, ../../../design/sass/_misc.sass */
+/* line 46, ../../../design/sass/_misc.sass */
 a#vimeo-link {
   background-image: url("/images/youthtree/icons/vimeo.png");
 }
 
-/* line 46, ../../../design/sass/_misc.sass */
+/* line 48, ../../../design/sass/_misc.sass */
 a#twitter-link {
   background-image: url("/images/youthtree/icons/twitter.png");
 }
 
-/* line 48, ../../../design/sass/_misc.sass */
+/* line 50, ../../../design/sass/_misc.sass */
 a#linkedin-link {
   background-image: url("/images/youthtree/icons/linkedin.png");
 }
 
-/* line 50, ../../../design/sass/_misc.sass */
+/* line 52, ../../../design/sass/_misc.sass */
 a#facebook-link {
   background-image: url("/images/youthtree/icons/facebook.png");
 }
 
-/* line 52, ../../../design/sass/_misc.sass */
+/* line 54, ../../../design/sass/_misc.sass */
 a#youtube-link {
   background-image: url("/images/youthtree/icons/youtube.png");
 }
 
-/* line 54, ../../../design/sass/_misc.sass */
+/* line 56, ../../../design/sass/_misc.sass */
 a#flickr-link {
   background-image: url("/images/youthtree/icons/flickr.png");
 }
 
-/* line 56, ../../../design/sass/_misc.sass */
+/* line 58, ../../../design/sass/_misc.sass */
 a#feed-link {
   background-image: url("/images/youthtree/icons/feed.png");
 }
 
-/* line 58, ../../../design/sass/_misc.sass */
+/* line 60, ../../../design/sass/_misc.sass */
 a#email-link {
   background-image: url("/images/youthtree/icons/email.png");
 }
 
-/* line 61, ../../../design/sass/_misc.sass */
+/* line 63, ../../../design/sass/_misc.sass */
 h2#mission-statement {
   text-align: center;
   padding: 0.75em 0;
   border-bottom: 1px dotted #777777;
-  font-weight: bold;
   font-size: 1.8em;
   margin: 0 0 1em;
 }
@@ -1038,7 +1039,7 @@ form.formtastic fieldset.inputs legend {
 form.formtastic fieldset.inputs legend span {
   height: 1.5em;
   line-height: 1.4em;
-  font-weight: bold;
+  font-weight: normal;
   font-style: normal;
   font-family: "IngomarJNLRegular";
   text-transform: uppercase;
@@ -1058,4 +1059,13 @@ form.formtastic fieldset.inputs ol li label {
 form.formtastic fieldset.inputs ol li label abbr.required {
   color: #992427;
   padding-left: 0.5em;
+}
+
+/* line 6, ../../../design/sass/_ie_fixes.sass */
+.ie6 #yt-subscribe-panel #yt-subscribe-button button, .ie7 #yt-subscribe-panel #yt-subscribe-button button {
+  padding: 10px 15px;
+}
+/* line 8, ../../../design/sass/_ie_fixes.sass */
+.ie6 #yt-subscribe-panel fieldset#yt-subscriber-details label, .ie7 #yt-subscribe-panel fieldset#yt-subscriber-details label {
+  width: 40px;
 }
