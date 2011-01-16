@@ -382,7 +382,7 @@ form.formtastic fieldset ol li.date fieldset ol li label input, form.formtastic 
 /* line 15, ../../../design/sass/_network.sass */
 #yt-subscribe {
   float: left;
-  background: #c4771b;
+  background: #de8721;
   -moz-border-radius-bottomleft: 15px;
   -webkit-border-bottom-left-radius: 15px;
   -o-border-bottom-left-radius: 15px;
@@ -910,24 +910,17 @@ ul#yt-sites li {
 }
 
 /* line 1, ../../../design/sass/_footer.sass */
-#page-footer {
+#page-footer, #welcome-footer {
   overflow: hidden;
   *zoom: 1;
   padding: 0.75em 1em;
-  background: #2a2b2c url("/images/youthtree/footer.jpg") center center repeat-x;
-  color: #929292;
 }
-/* line 7, ../../../design/sass/_footer.sass */
-#page-footer a {
-  color: #929292;
+/* line 5, ../../../design/sass/_footer.sass */
+#page-footer a, #welcome-footer a {
   text-decoration: underline;
 }
-/* line 284, ../../../design/sass/_simplass.sass */
-#page-footer a:hover {
-  color: white;
-}
-/* line 11, ../../../design/sass/_footer.sass */
-#page-footer ul#supporter-information {
+/* line 8, ../../../design/sass/_footer.sass */
+#page-footer ul#supporter-information, #welcome-footer ul#supporter-information {
   font-size: 1.2em;
   margin: 0.5em auto 0.5em;
   padding: 0;
@@ -936,111 +929,206 @@ ul#yt-sites li {
   font-style: normal;
   font-family: "IngomarJNLRegular";
   text-transform: uppercase;
-  text-shadow: black 1px 1px 2px;
   text-align: center;
 }
-/* line 19, ../../../design/sass/_footer.sass */
-#page-footer ul#supporter-information li {
+/* line 15, ../../../design/sass/_footer.sass */
+#page-footer ul#supporter-information li, #welcome-footer ul#supporter-information li {
   display: inline;
   margin: 0 0.5em;
 }
 
-/* line 1, ../../../design/sass/_misc.sass */
+/* line 19, ../../../design/sass/_footer.sass */
+#page-footer {
+  background: #2a2b2c url("/images/youthtree/footer.jpg") center center repeat-x;
+  color: #929292;
+}
+/* line 22, ../../../design/sass/_footer.sass */
+#page-footer ul#supporter-inline {
+  text-shadow: black 1px 1px 2px;
+}
+/* line 24, ../../../design/sass/_footer.sass */
+#page-footer a {
+  color: #929292;
+}
+/* line 284, ../../../design/sass/_simplass.sass */
+#page-footer a:hover {
+  color: white;
+}
+
+/* line 28, ../../../design/sass/_footer.sass */
+#welcome-footer ul#supporter-information {
+  text-shadow: #666666 1px 1px 3px;
+}
+/* line 30, ../../../design/sass/_footer.sass */
+#welcome-footer a {
+  color: #333333;
+}
+/* line 284, ../../../design/sass/_simplass.sass */
+#welcome-footer a:hover {
+  color: #58300b;
+}
+
+/* line 33, ../../../design/sass/_footer.sass */
+nav#footer-navigation {
+  font-size: 1.2em;
+  font-weight: normal;
+  font-style: normal;
+  font-family: "IngomarJNLRegular";
+  text-transform: uppercase;
+}
+/* line 38, ../../../design/sass/_footer.sass */
+nav#footer-navigation ul {
+  list-style: none;
+  margin: 1em 0 0.5em;
+  padding: 0;
+  text-align: center;
+}
+/* line 43, ../../../design/sass/_footer.sass */
+nav#footer-navigation ul li {
+  display: inline;
+  margin: 0 0.75em;
+}
+/* line 47, ../../../design/sass/_footer.sass */
+nav#footer-navigation ul li a {
+  color: #222222;
+  text-decoration: none;
+  text-shadow: #666666 1px 1px 3px;
+}
+/* line 284, ../../../design/sass/_simplass.sass */
+nav#footer-navigation ul li a:hover {
+  color: #58300b;
+}
+
+/* line 2, ../../../design/sass/_misc.sass */
+#introduction p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  text-align: center;
+  margin: 1em 2em 0.5em;
+}
+
+/* line 8, ../../../design/sass/_misc.sass */
 #carousel {
   background: white;
   border: 1px dotted #777777;
   padding: 10px;
   text-align: center;
   z-index: 5;
+  position: relative;
 }
-/* line 8, ../../../design/sass/_misc.sass */
+/* line 16, ../../../design/sass/_misc.sass */
+#carousel .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  z-index: 10;
+}
+/* line 23, ../../../design/sass/_misc.sass */
+#carousel .overlay a {
+  display: block;
+  background: transparent url("/images/youthtree/carousel-overlay.png") center center no-repeat;
+  width: 915px;
+  height: 350px;
+  z-index: 10;
+  font-size: 2em;
+  text-indent: -999em;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* line 35, ../../../design/sass/_misc.sass */
 #carousel ul {
   display: block;
-  width: 895px;
+  width: 100%;
   height: 350px;
   margin: 0 auto;
   list-style: none;
   position: relative;
 }
-/* line 15, ../../../design/sass/_misc.sass */
+/* line 42, ../../../design/sass/_misc.sass */
 #carousel ul li {
   position: absolute;
   top: 0;
   left: 0;
   margin: 0;
   padding: 0;
-  width: 895px;
+  width: 100%;
   height: 350px;
   display: none;
 }
 
-/* line 27, ../../../design/sass/_misc.sass */
-ul#social-media-icons {
+/* line 52, ../../../design/sass/_misc.sass */
+#homepage-details {
   overflow: hidden;
   *zoom: 1;
+  padding: 0.5em 1em;
+}
+
+/* line 56, ../../../design/sass/_misc.sass */
+ul#social-media-icons {
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 150px;
-}
-/* line 33, ../../../design/sass/_misc.sass */
-ul#social-media-icons li {
-  display: inline;
+  overflow: hidden;
+  *zoom: 1;
   display: block;
-  width: 24px;
-  height: 24px;
-  margin: 10px 20px 10px 0;
-  float: left;
 }
-/* line 40, ../../../design/sass/_misc.sass */
+/* line 62, ../../../design/sass/_misc.sass */
+ul#social-media-icons li {
+  display: block;
+  float: right;
+  margin: 0 0 0 8px;
+}
+/* line 66, ../../../design/sass/_misc.sass */
 ul#social-media-icons li a {
   display: block;
   width: 24px;
   height: 24px;
-  text-indent: -1000px;
+  text-indent: -9999em;
 }
 
-/* line 46, ../../../design/sass/_misc.sass */
+/* line 72, ../../../design/sass/_misc.sass */
 a#vimeo-link {
   background-image: url("/images/youthtree/icons/vimeo.png");
 }
 
-/* line 48, ../../../design/sass/_misc.sass */
+/* line 74, ../../../design/sass/_misc.sass */
 a#twitter-link {
   background-image: url("/images/youthtree/icons/twitter.png");
 }
 
-/* line 50, ../../../design/sass/_misc.sass */
+/* line 76, ../../../design/sass/_misc.sass */
 a#linkedin-link {
   background-image: url("/images/youthtree/icons/linkedin.png");
 }
 
-/* line 52, ../../../design/sass/_misc.sass */
+/* line 78, ../../../design/sass/_misc.sass */
 a#facebook-link {
   background-image: url("/images/youthtree/icons/facebook.png");
 }
 
-/* line 54, ../../../design/sass/_misc.sass */
+/* line 80, ../../../design/sass/_misc.sass */
 a#youtube-link {
   background-image: url("/images/youthtree/icons/youtube.png");
 }
 
-/* line 56, ../../../design/sass/_misc.sass */
+/* line 82, ../../../design/sass/_misc.sass */
 a#flickr-link {
   background-image: url("/images/youthtree/icons/flickr.png");
 }
 
-/* line 58, ../../../design/sass/_misc.sass */
+/* line 84, ../../../design/sass/_misc.sass */
 a#feed-link {
   background-image: url("/images/youthtree/icons/feed.png");
 }
 
-/* line 60, ../../../design/sass/_misc.sass */
+/* line 86, ../../../design/sass/_misc.sass */
 a#email-link {
   background-image: url("/images/youthtree/icons/email.png");
 }
 
-/* line 63, ../../../design/sass/_misc.sass */
+/* line 89, ../../../design/sass/_misc.sass */
 h2#mission-statement {
   text-align: center;
   padding: 0.75em 0;
