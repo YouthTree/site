@@ -382,7 +382,7 @@ form.formtastic fieldset ol li.date fieldset ol li label input, form.formtastic 
 /* line 15, ../../../design/sass/_network.sass */
 #yt-subscribe {
   float: left;
-  background: #de8721;
+  background: #222222;
   -moz-border-radius-bottomleft: 15px;
   -webkit-border-bottom-left-radius: 15px;
   -o-border-bottom-left-radius: 15px;
@@ -399,46 +399,47 @@ form.formtastic fieldset ol li.date fieldset ol li label input, form.formtastic 
 /* line 19, ../../../design/sass/_network.sass */
 #yt-subscribe a {
   padding: 0 20px;
-  color: black;
+  color: #ce8d22;
+  font-weight: bold;
 }
 /* line 284, ../../../design/sass/_simplass.sass */
 #yt-subscribe a:hover {
-  color: white;
+  color: #dc9a2d;
 }
-/* line 23, ../../../design/sass/_network.sass */
+/* line 24, ../../../design/sass/_network.sass */
 #yt-subscribe.active {
   background: #1e1e1e;
 }
-/* line 25, ../../../design/sass/_network.sass */
+/* line 26, ../../../design/sass/_network.sass */
 #yt-subscribe.active a {
   color: #c4771b;
 }
 
-/* line 28, ../../../design/sass/_network.sass */
+/* line 29, ../../../design/sass/_network.sass */
 #yt-subscribe, ul#yt-sites {
   font-size: 12px;
   line-height: 18px;
-  padding: 10px;
+  padding: 7px 10px;
 }
 
-/* line 33, ../../../design/sass/_network.sass */
+/* line 34, ../../../design/sass/_network.sass */
 ul#yt-sites {
   float: right;
   margin: 0;
   list-style: none;
 }
-/* line 38, ../../../design/sass/_network.sass */
+/* line 39, ../../../design/sass/_network.sass */
 ul#yt-sites li {
   display: inline;
   margin: 0 0 0 20px;
 }
 
-/* line 42, ../../../design/sass/_network.sass */
+/* line 43, ../../../design/sass/_network.sass */
 #yt-subscribe-panel {
   display: none;
   background: #1e1e1e;
 }
-/* line 45, ../../../design/sass/_network.sass */
+/* line 46, ../../../design/sass/_network.sass */
 #yt-subscribe-panel form {
   width: 960px;
   margin: 0 auto;
@@ -447,12 +448,12 @@ ul#yt-sites li {
   *zoom: 1;
   font-size: 12px;
 }
-/* line 52, ../../../design/sass/_network.sass */
+/* line 53, ../../../design/sass/_network.sass */
 #yt-subscribe-panel fieldset {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 55, ../../../design/sass/_network.sass */
+/* line 56, ../../../design/sass/_network.sass */
 #yt-subscribe-panel fieldset label {
   color: white;
   padding: 5px 10px 5px 0;
@@ -460,18 +461,18 @@ ul#yt-sites li {
   float: left;
   display: block;
 }
-/* line 62, ../../../design/sass/_network.sass */
+/* line 63, ../../../design/sass/_network.sass */
 #yt-subscribe-panel fieldset#yt-subscriber-details {
   float: left;
   margin-right: 10px;
   width: 220px;
 }
-/* line 66, ../../../design/sass/_network.sass */
+/* line 67, ../../../design/sass/_network.sass */
 #yt-subscribe-panel fieldset#yt-subscriber-details label {
   width: 50px;
   padding-top: 8px;
 }
-/* line 69, ../../../design/sass/_network.sass */
+/* line 70, ../../../design/sass/_network.sass */
 #yt-subscribe-panel fieldset#yt-subscriber-details input {
   float: left;
   background: #666666;
@@ -482,17 +483,17 @@ ul#yt-sites li {
   width: 150px;
   margin-bottom: 10px;
 }
-/* line 80, ../../../design/sass/_network.sass */
+/* line 81, ../../../design/sass/_network.sass */
 #yt-subscribe-panel fieldset#yt-subscriber-subscriptions {
   float: left;
   width: 520px;
   margin: 0 10px;
 }
-/* line 84, ../../../design/sass/_network.sass */
+/* line 85, ../../../design/sass/_network.sass */
 #yt-subscribe-panel fieldset#yt-subscriber-subscriptions label {
   width: 130px;
 }
-/* line 87, ../../../design/sass/_network.sass */
+/* line 88, ../../../design/sass/_network.sass */
 #yt-subscribe-panel fieldset#yt-subscribe-button {
   float: right;
   width: 170px;
@@ -500,19 +501,19 @@ ul#yt-sites li {
   padding-top: 15px;
   text-align: left;
 }
-/* line 94, ../../../design/sass/_network.sass */
+/* line 95, ../../../design/sass/_network.sass */
 #yt-subscribe-panel fieldset#yt-subscribe-button button {
   padding: 10px 30px;
   background: #c86e05 url("/images/youthtree/bg-gradient.png") bottom center repeat-x;
   font-size: 16px;
   border: 2px solid #ad5f06;
   color: white;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -o-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -khtml-border-radius: 8px;
-  border-radius: 8px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
   text-shadow: black 1px 1px 2px;
   font-weight: bold;
   -moz-box-shadow: black 1px 1px 5px false;
@@ -520,12 +521,12 @@ ul#yt-sites li {
   -o-box-shadow: black 1px 1px 5px false;
   box-shadow: black 1px 1px 5px false;
 }
-/* line 105, ../../../design/sass/_network.sass */
+/* line 106, ../../../design/sass/_network.sass */
 #yt-subscribe-panel fieldset#yt-subscribe-button button:hover {
   cursor: pointer;
   background-color: #af6004;
 }
-/* line 110, ../../../design/sass/_network.sass */
+/* line 111, ../../../design/sass/_network.sass */
 #yt-subscribe-panel ul#yt-newsletter-choices {
   float: left;
   display: block;
@@ -534,19 +535,19 @@ ul#yt-sites li {
   padding: 0;
   list-style: none;
 }
-/* line 117, ../../../design/sass/_network.sass */
+/* line 118, ../../../design/sass/_network.sass */
 #yt-subscribe-panel ul#yt-newsletter-choices li {
   display: block;
 }
-/* line 119, ../../../design/sass/_network.sass */
+/* line 120, ../../../design/sass/_network.sass */
 #yt-subscribe-panel ul#yt-newsletter-choices li label {
   width: auto;
 }
-/* line 121, ../../../design/sass/_network.sass */
+/* line 122, ../../../design/sass/_network.sass */
 #yt-subscribe-panel ul#yt-newsletter-choices li label span.yt-list-name {
   color: white;
 }
-/* line 123, ../../../design/sass/_network.sass */
+/* line 124, ../../../design/sass/_network.sass */
 #yt-subscribe-panel ul#yt-newsletter-choices li label span.yt-list-description {
   padding-left: 5px;
   color: #6a6a6a;
