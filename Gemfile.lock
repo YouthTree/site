@@ -2,8 +2,9 @@ GEM
   remote: http://rubygems.org/
   specs:
     RedCloth (4.2.3)
-    activerecord (1.6.0)
-    activesupport (3.0.3)
+    activerecord (2.3.10)
+      activesupport (= 2.3.10)
+    activesupport (2.3.10)
     acts_as_list (0.1.2)
     aws-s3 (0.6.2)
       builder
@@ -62,8 +63,8 @@ GEM
       rack
     will_paginate (2.3.15)
     xml-simple (1.0.12)
-    ydd (0.0.11)
-      activerecord
+    ydd (0.1.0)
+      activerecord (>= 2.3)
       activesupport
       thor (~> 0.14)
     youthtree-capistrano (0.3.1)
@@ -92,5 +93,5 @@ DEPENDENCIES
   ruby-debug
   unicorn
   will_paginate (~> 2.3.11)
-  ydd
+  ydd (~> 0.1.0)
   youthtree-capistrano

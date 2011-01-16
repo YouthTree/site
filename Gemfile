@@ -16,7 +16,7 @@ gem 'pg'
 gem 'unicorn', :require => nil
 gem 'nokogiri'
 
-gem 'ydd', :require => nil
+gem 'ydd', '~> 0.1.0', :require => nil
 
 gem 'paperclip'
 gem 'aws-s3', :require => nil
