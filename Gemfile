@@ -13,8 +13,10 @@ gem 'radiant-forms-extension',    :require => nil
 gem 'radiant-layouts-extension',  :require => nil
 
 gem 'pg'
-gem 'unicorn'
+gem 'unicorn', :require => nil
 gem 'nokogiri'
+
+gem 'ydd', :require => nil
 
 gem 'paperclip'
 gem 'aws-s3', :require => nil

@@ -92,4 +92,5 @@ DEPENDENCIES
   ruby-debug
   unicorn
   will_paginate (~> 2.3.11)
+  ydd
   youthtree-capistrano
