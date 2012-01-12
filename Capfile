@@ -1,15 +1,17 @@
-[:settings, :jammit, :compass, :barista].each do |feature|
+set :passenger, true
+[:settings, :jammit, :compass, :barista, :unicorn].each do |feature|
   set feature, false
 end
 
 set :uploads_latest,   'public/images/uploaded'
 set :application,      'site'
 set :rvm_ruby_string,  'ree@youthtree_site'
-set :unicorn_app_type, 'rails'
+# set :unicorn_app_type, 'rails'
 
 set :git_enable_submodules, true
 
 require 'youthtree-capistrano'
+require 'youth_tree/recipes/passenger'
 
 set :bundle_dir,   nil
 set :bundle_flags, '--quiet'
