@@ -124,11 +124,9 @@ input, select {
   src: local("☺"), url("/fonts/ingomar-webfont.woff") format("woff"), url("/fonts/ingomar-webfont.ttf") format("truetype"), url("/fonts/ingomar-webfont.svg#webfont") format("svg");
 }
 
-@import url("http://fonts.googleapis.com/css?family=Flamenco:400");
-@import url("http://fonts.googleapis.com/css?family=Terminal+Dosis:400,700");
 /* line 8, ../../../design/sass/_youthtree.sass */
 body {
-  background: #cccccc url("/images/useful/background.png") center center repeat;
+  background: #cccccc url("/images/useful/background.png") top center repeat;
   font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
 }
 
@@ -649,9 +647,9 @@ ul#yt-sites li {
 }
 /* line 14, ../../../design/sass/_content.sass */
 #content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
-  font-family: "Flamenco", sans-serif;
+  font-family: "Enriqueta", sans-serif;
   border-bottom: 1px dotted #777777;
-  padding: 5px;
+  padding: 7px 5px 5px;
   margin-bottom: 14px;
   color: black;
 }
